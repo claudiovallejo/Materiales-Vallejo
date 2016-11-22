@@ -1,0 +1,157 @@
+---
+title: Materiales para Construcción — Materiales Vallejo
+layout: main
+dynamic: true
+---
+<%# Content %>
+<main class="ptc">
+  <%# Hero %>
+  <%# Config %>
+  <% hero = data.index.hero %>
+  <% anchor_one = "" %>
+  <% anchor_two = "" %>
+  <%# End %>
+  <section class="pv8 ph1_5 pv16-ns ph2-m cover bg-center" style="background-image: url(<%= hero.image.path %>)">
+      <header class="mw18 mw28-ns center lato tc white">
+        <h1 class="ma0 mb1 f15 fw4 lh01"><%= hero.title %></h1>
+        <p class="ma0 mb2 f1 fw4 lh1_5"><%= hero.subtitle %></p>
+      </header>
+      <div class="tc">
+        <% hero.buttons.each_with_index do |button, b| %>
+          <% if b === 0 %>
+            <% anchor_one = button.link %>
+          <% else %>
+            <% anchor_two = button.link %>
+          <% end %>
+          <% if button.is_primary %>
+            <a id="test" class="db dib-ns center w8 pv1 ph1_5  <% if b == 0 %>mb1<% end %> mb0-ns mr1-ns lato white fw7 no-underline tc bg-blue hover-bg-dark-blue br0125 button" href="#<%= anchor_one %>">
+              <%= button.title %>
+            </a>
+          <% else %>
+            <a id="secondary" class="db dib-ns center w8 pv1 ph1_5 <% if b == 0 %>mb1<% end %> lato white fw7 no-underline tc ba b--white br0125" href="#<%= anchor_two %>"><%= button.title %></a>
+          <% end %>
+        <% end %>
+      </div>
+  </section>
+  <%# Products %>
+  <%# Config %>
+  <% categories = data.products.categories %>
+  <% cl = categories.length - 1 %>
+  <% pl = 0 %>
+  <% categories.each do |category| %>
+    <% category.products.each do |product| %>
+      <% pl = pl + 1 %>
+    <% end %>
+  <% end %>
+  <% pc = 0 %>
+  <%# End %>
+  <section id="<%= anchor_one %>" class="pv4 bb b--light-gray">
+    <header class="mw18 mw28-ns center lato tc ph1_5 ph2-m mb3">
+      <h1 class="ma0 mb1 f15 fw4 lh01 dark-gray"><%= data.index.products.title %></h1>
+      <p class="ma0 f1 fw4 lh1_5 gray"><%= data.index.products.subtitle %></p>
+    </header>
+    <nav>
+      <ul class="mw64_5 center ma0 ph1_5 ph2-m pb3 overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+        <% categories.each_with_index do |category, c| %>
+          <li class="dib"><a class="js-category dib ma0 lato <% if c === 0 %>blue<% else %>gray<% end %> <% if c != cl %>mr2<% end %> hover-blue link no-underline cursor-pointer"><%= category.name %></a></li>
+        <% end %>
+      </ul>
+    </nav>
+    <div class="relative mw64_5 center">
+      <div class="js-previous dn db-l absolute top-45 left-4 z-2 cursor-auto">
+        <svg viewBox="0 0 100 100" width="32px" height="32px">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="js-change is-idle pe-none"></path>
+        </svg>
+      </div>
+      <div class="js-next dn db-l absolute top-45 right-4 z-2 cursor-pointer">
+        <svg viewBox="0 0 100 100" width="32px" height="32px">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="js-change is-active" transform="translate(100, 100) rotate(180) "></path>
+        </svg>
+      </div>
+      <div class="overflow-hidden-l">
+        <div class="dn db-l absolute left-0 z-2 w4 h20 bg-white-to-fade"></div>
+        <div class="dn db-l absolute right-0 z-2 w4 h20 bg-fade-to-white"></div>
+        <div id="carrusel" class="ph1_5 ph2-m overflow-x-auto overflow-y-hidden overflow-x-hidden-l overflow-scrolling scrollbar-dn nowrap">
+          <% categories.each do |category| %>
+            <% category.products.each do |product| %>
+              <% pc = pc + 1 %>
+              <article class="js-card dib w15 h20 <% if pc != pl %>mr2<% end %> bg-white ba b--light-gray br0125 cursor-pointer" data-category="<%= category.name.downcase %>">
+                <header class="relative mh1_5 mt1_5 pb2">
+                  <%= image_tag "icons/flecha.svg", :class => "js-rotate is-down absolute top-1 right-0" %>
+                  <h2 class="ma0 mb0_5 lato f1 fw4 silver"><%= product.brand %></h2>
+                  <h1 class="js-test ma0 lato f1 fw4 dark-gray"><%= product.name %></h1>
+                </header>
+                <div class="relative">
+                  <div class="js-fade is-visible absolute top-0 o-1">
+                    <img class="pb2" src="<%= product.image.path %>">
+                  </div>
+                  <div class="js-fade is-hidden absolute top-0 ws-normal">
+                    <ul class="ma0 pa0 mh1_5 mb1_5 list">
+                      <%# Product Info %>
+                      <%# Config %>
+                      <% sl = product.info.length - 1 %>
+                      <%# End %>
+                      <% product.info.each_with_index do |section, s| %>
+                        <li>
+                          <p class="ma0 mb0_5 lato gray"><%= section.title %></p>
+                        </li>
+                        <li class="<% if s != sl %>mb1<% end %>">
+                          <ul class="ma0 pa0 list">
+                            <%# Info Details %>
+                            <%# Config %>
+                            <% dl = section.details.length - 1 %>
+                            <%# End %>
+                            <% section.details.each_with_index do |point, i|  %>
+                              <li class="dib <% if i != dl %>mr1<% end %> <% if i %><% end %>">
+                                <p class="ma0 lato dark-gray"><%= point %></p>
+                              </li>
+                            <% end %>
+                          </ul>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%# Services %>
+  <%# Config %>
+  <% sl = data.services.length - 1 %>
+  <%# End %>
+  <section class="pv4 ph1_5 ph2-m ph0-l bb b--light-gray">
+    <header class="mw18 center lato tc mb3">
+      <h1 class="ma0 mb1 f15 fw4 lh01 dark-gray"><%= data.index.services.title %></h1>
+      <p class="ma0 f1 fw4 lh1_5 gray"><%= data.index.services.subtitle %></p>
+    </header>
+    <div class="mw18 mw42_5-ns center ma0 pa0 cf">
+      <% data.services.each_with_index do |service, s| %>
+        <% if s === 0 || s === ((sl / 2).floor - 1) %>
+        <div class="cf <% if s === 0 %>mb2-ns<% end %>">
+        <% end %>
+          <div class="fl-ns w-50-ns <% if s != sl %>mb2<% end %> <% if s % 2 === 0 %>pr2-ns<% else %><% end %>">
+            <%= image_tag "#{ service.icon.path }", :class => "db ma0", :alt => "#{ service.icon.alt }", :style => "width: 48px; height: 48px;" %>
+            <h3 class="dib ma0 mb0_5 lato f1 fw4 dark-gray"><%= service.name %></h3>
+            <p class="ma0 lato f1 fw4 lh1_5 gray"><%= service.description %></p>
+          </div>
+        <% if s === (sl / 2) || s === sl %>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+  </section>
+  <%# Contact %>
+  <section id="<%= anchor_two %>" class="pv4 ph1_5">
+    <header class="mw18 center lato tc mb4">
+      <h1 class="ma0 mb1 f15 fw4 lh01 dark-gray"><%= data.index.contact.title %></h1>
+      <p class="js-subtitle ma0 f1 fw4 lh1_5 gray"><%= data.index.contact.subtitle.opens %></p>
+    </header>
+    <%= partial "partials/contact" %>
+  </section>
+  <%# Jobs Banner %>
+  <%= partial "partials/jobs" %>
+</main>

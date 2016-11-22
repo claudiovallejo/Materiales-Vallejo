@@ -1,0 +1,101 @@
+{
+  "section": {
+    "phone": {
+      "title": "Teléfono"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "address": {
+      "title": "Dirección"
+    },
+    "schedule": {
+      "opens": "Horarios <span class=\"silver\">(Abierto)</span>",
+      "lunch": "Horarios <span class=\"silver\">(En la Comida)</span>",
+      "closes": "Horarios <span class=\"silver\">(Cerrado)</span>"
+    }
+  },
+  "number": "868 816 3393",
+  "email": "matvallejo@outlook.com",
+  "github": "https://github.com/materialesvallejo/sitio",
+  "maps": "Abrir mapa en Google Maps",
+  "address": {
+    "street": "Calle Dieciocho #156",
+    "sector": "Colonia Buenavista",
+    "city": "Matamoros",
+    "state": "Tams.",
+    "zip_code": "87380",
+    "url": "https://www.google.com.mx/maps/place/Materiales+Vallejo/@25.864819,-97.515182,15z/data=!4m5!3m4!1s0x0:0x646c317ec47c08db!8m2!3d25.864819!4d-97.515182"
+  },
+  "button": {
+    "opens": {
+      "title": "Marcar a Oficina",
+      "href": "tel:"
+    },
+    "closes": {
+      "title": "Enviar Correo",
+      "href": "mailto:"
+    }
+  },
+  "status": {
+    "opens": {
+      "title": "Sucursal Abierta",
+      "color": "bg-green"
+    },
+    "lunch": {
+      "title": "En la Comida",
+      "color": "bg-orange"
+    },
+    "closes": {
+      "title": "Sucursal Cerrada",
+      "color": "bg-red"
+    }
+  },
+  "schedules": [
+    {
+      "is_full_day": true,
+      "title": "Entre semana",
+      "hours": {
+        "opens": 8,
+        "lunch": 13,
+        "afternoon": 14.5,
+        "closes": 18
+      }
+    },
+    {
+      "is_full_day": false,
+      "title": "Sábados",
+      "hours": {
+        "opens": 8,
+        "closes": 14
+      }
+    }
+  ],
+  "holidays": [
+    {
+      "is_half_day": false,
+      "title": "Revolución Mexicana",
+      "date": "21/11/2016"
+    },
+    {
+      "is_half_day": true,
+      "title": "Navidad",
+      "date": "23/12/2016"
+    },
+    {
+      "is_half_day": true,
+      "title": "Año Nuevo",
+      "date": "30/12/2016"
+    },
+    {
+      "is_half_day": false,
+      "title": "Año Nuevo",
+      "date": "31/12/2016"
+    },
+    {
+      "is_half_day": false,
+      "title": "Año Nuevo",
+      "date": "1/1/2017"
+    }
+  ]
+}

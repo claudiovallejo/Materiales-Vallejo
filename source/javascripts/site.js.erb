@@ -1,0 +1,272 @@
+/*  Global constant  */
+//  Current Path constant
+const currentPath = window.location.pathname;
+/*
+
+  Content Animation
+  (Cross-browser compatible)
+
+*/
+/*  Main Template Content animation */
+//  Cache load-in elements
+const $load = document.getElementsByClassName('js-load')[0];
+const $scale = document.getElementsByClassName('js-scale')[0];
+if (window.attachEvent) {
+  window.attachEvent('onload', function(){
+    $load.classList.remove('is-hidden');
+    $load.classList.add('is-visible');
+    if (currentPath != '/error' || currentPath != '/aplicacion-enviada') {
+      $scale.classList.remove('is-tiny');
+      $scale.classList.add('is-normal');
+    }
+  });
+}
+else if (window.addEventListener) {
+  window.addEventListener('load', function(){
+    $load.classList.remove('is-hidden');
+    $load.classList.add('is-visible');
+    if (currentPath != '/error' || currentPath != '/aplicacion-enviada') {
+      $scale.classList.remove('is-tiny');
+      $scale.classList.add('is-normal');
+    }
+  });
+}
+/*
+
+  Dynamic Content
+  (Cross-browser compatible)
+
+*/
+//  Time Variables
+var today = new Date(),
+    currentYear = today.getFullYear(),
+    currentMonth = today.getMonth(),
+    currentDayOfWeek = today.getDay(),
+    currentDay = today.getDate(),
+    currentDate = "" + currentDay + "/" + (currentMonth + 1) + "/" + currentYear,
+    currentHour = today.getHours(),
+    currentMinutes = today.getMinutes(),
+    currentTime = currentHour + (currentMinutes / 59),
+    currentDayType;
+//  Half and Full Holiday List
+<%# Configuration %>
+<% half_holiday = [] %>
+<% full_holiday = [] %>
+<% data.contact.holidays.each do |holiday| %>
+  <% if holiday.is_half_day %>
+    <% half_holiday.push(holiday.date) %>
+  <% else %>
+    <% full_holiday.push(holiday.date) %>
+  <% end %>
+<% end %>
+<%# End %>
+const half_holidays = <%= half_holiday %>;
+const full_holidays = <%= full_holiday %>;
+//  Current Day Type & Time Variables
+var currentDayType, currentDayTime;
+//  Sets type of current day
+function setCurrentDayType() {
+  //  Half Holiday setter
+  for (var h = 0; h < half_holidays.length; h++) {
+    if (half_holidays[h] === currentDate) {
+      currentDayType = "Half Day";
+      return currentDayType;
+    }
+  }
+  //  Full Holiday setter
+  for (var h = 0; h < full_holidays.length; h++) {
+    if (full_holidays[h] === currentDate) {
+      currentDayType = "Rest Day";
+      return currentDayType;
+    }
+  }
+  //  Work Day setter
+  if ((1 <= currentDayOfWeek) && (currentDayOfWeek <= 5)) {
+    currentDayType = "Full Day";
+    return currentDayType;
+  }
+  //  Half Day setter
+  else if (currentDayOfWeek === 6) {
+    currentDayType = "Half Day";
+    return currentDayType;
+  }
+  //  Rest Day setter
+  else {
+    currentDayType = "Rest Day";
+    return currentDayType;
+  }
+}
+//  Updates current day time
+<%# Config %>
+<% weekdays = data.contact.schedules[0].hours %>
+<% saturdays = data.contact.schedules[1].hours %>
+<%# End %>
+function setCurrentDayTime() {
+  var status = "Closed";
+  //  If status is Rest Day, return "Closed"
+  if (setCurrentDayType() === "Rest Day") {
+    return status;
+  }
+  //  Hours of Operation
+  const fullDayOpen = (((<%= weekdays.opens %> <= currentTime) && (currentTime < <%= weekdays.lunch %>)) || ((<%= weekdays.afternoon %> <= currentTime) && (currentTime < <%= weekdays.closes %>)));
+  const fullDayLunch = ((<%= weekdays.lunch %> <= currentTime) && (currentTime < <%= weekdays.afternoon %>))
+  const halfDayOpen = ((<%= saturdays.opens %> <= currentTime) && (currentTime < <%= saturdays.closes %>));
+  //  Cache Hours of Operation values
+  const statuses = [fullDayOpen, fullDayLunch, halfDayOpen];
+  //  Status index
+  var status_index = 3;
+  //  Status value checker
+  for (var s = 0; s < statuses.length; s++) {
+    if (statuses[s]) {
+      status_index = s;
+      break;
+    }
+  }
+  //  Status setter
+  switch(status_index) {
+    case 0:
+      status = "Open";
+      break;
+    case 1:
+      status = "Lunch";
+      break;
+    case 2:
+      status = "Closed";
+      break;
+    default:
+      status = "Closed";
+  }
+  return status;
+}
+//  Updates dynamic content first based on office status, then based on day type.
+function updateDynamicContent(officeStatus, dayType) {
+  //  Set dynamic content to "Closed"
+  if (officeStatus === "Closed") {
+    navStatus("Closed");
+    navAction("Closed");
+    mobileAction("Closed");
+    if (currentPath === '/') {
+      contactSection("Closed");
+    }
+    if (currentPath === '/empresa') {
+      aboutContent("Closed");
+    }
+    if (currentPath.includes('aplicacion')) {
+      applicationContent("Closed");
+    }
+  }
+  //  Set dynamic content to "Lunch"
+  if (officeStatus === "Lunch" && dayType === "Full Day") {
+    navStatus("Lunch");
+    navAction("Lunch");
+    mobileAction("Lunch");
+    if (currentPath === '/') {
+      contactSection("Lunch");
+    }
+    if (currentPath === '/empresa') {
+      aboutContent("Lunch");
+    }
+    if (currentPath.includes('aplicacion')) {
+      applicationContent("Lunch");
+    }
+  }
+}
+//  Updates nav status
+function navStatus(status) {
+  //  Cache status icon and text
+  const $status = document.getElementById('status');
+  const $text = document.getElementById('status-text');
+  //  Set status to "Closed"
+  if (status === "Closed") {
+    $status.classList.toggle('bg-green');
+    $status.classList.toggle('bg-red');
+    $text.innerHTML = "<%= data.contact.status.closes.title %>";
+  }
+  //  Set status to "Lunch"
+  if (status === "Lunch") {
+    $status.classList.toggle('bg-green');
+    $status.classList.toggle('bg-orange');
+    $text.innerHTML = "<%= data.contact.status.lunch.title %>";
+  }
+}
+//  Updates nav action button
+function navAction(status) {
+  //  Cache action button
+  const $button = document.getElementById('nav-action');
+  //  Set button to "Closed" / "Lunch" status
+  if (status === "Closed" || status === "Lunch") {
+    $button.classList.toggle('bg-green');
+    $button.classList.toggle('bg-blue');
+    $button.classList.toggle('hover-bg-dark-green');
+    $button.classList.toggle('hover-bg-dark-blue');
+    $button.href = "<%= data.contact.button.closes.href %><%= data.contact.email %>";
+    $button.innerHTML = "<%= data.contact.button.closes.title %>";
+  }
+}
+//  Updates mobile contact button
+function mobileAction(status) {
+  //  Cache mobile contact button
+  const $button = document.getElementsByClassName('js-mobile')[0];
+  //  Set button to "Closed" / "Lunch" status
+  if (status === "Closed" || status === "Lunch") {
+    $button.classList.toggle('bg-green');
+    $button.classList.toggle('bg-blue');
+    $button.setAttribute('href', 'mailto:<%= data.contact.email %>');
+    $button.style.backgroundImage = "url('../../images/icons/mensaje.svg')";
+  }
+}
+//  Updates About content
+function aboutContent(status) {
+  //  Cache about status span
+  const $about = document.getElementsByClassName('js-about')[0];
+  const $contact = document.getElementsByClassName('js-contact')[0];
+  const $remove = document.getElementsByClassName('js-remove')[0];
+  //  Set innerHTML to "Closed" / "Lunch" status
+  if (status === "Closed") {
+    $about.innerHTML = '<%= data.about.contact.closes %>';
+    $contact.removeChild($remove);
+  }
+  else if (status === "Lunch") {
+    $about.innerHTML = '<%= data.about.contact.lunch %>';
+    $contact.removeChild($remove);
+  }
+}
+//  Updates Application content
+function applicationContent(status) {
+  //  Cache application information span
+  const $application = document.getElementsByClassName('js-application')[0];
+  //  Set innerHTML to "Closed"
+  if (status === "Closed") {
+    $application.innerHTML = '<%= data.jobs.application.closes %>';
+  }
+  else if (status === "Lunch") {
+    $application.innerHTML = '<%= data.jobs.application.lunch %>';
+  }
+}
+//  Updates Index Contact Section
+function contactSection(status) {
+  //  Cache section subtitle, phone, and schedule title nodes
+  const $subtitle = document.getElementsByClassName('js-subtitle')[0];
+  const $phone = document.getElementsByClassName('js-phone')[0];
+  const $schedule = document.getElementsByClassName('js-schedule')[0];
+  //  Set subtitle, phone, and schedule to "Closed"
+  if (status === "Closed") {
+    $subtitle.innerHTML = '<%= data.index.contact.subtitle.closes %>';
+    $phone.classList.remove('blue');
+    $phone.classList.remove('hover-dark-blue');
+    $phone.classList.add('gray');
+    $phone.removeAttribute('href');
+    $schedule.innerHTML = '<%= data.contact.section.schedule.closes %>';
+  }
+  //  Set subtitle, phone, and schedule to "Lunch"
+  if (status === "Lunch") {
+    $subtitle.innerHTML = '<%= data.index.contact.subtitle.lunch %>';
+    $phone.classList.remove('blue');
+    $phone.classList.remove('hover-dark-blue');
+    $phone.classList.add('gray');
+    $phone.removeAttribute('href');
+    $schedule.innerHTML = '<%= data.contact.section.schedule.lunch %>';
+  }
+}
+//  Updating dynamic content
+updateDynamicContent(setCurrentDayTime(), setCurrentDayType());

@@ -1,0 +1,27 @@
+<%# Footer %>
+<%# Config %>
+<% available_jobs = 0 %>
+<% data.jobs.list.each do |job| %>
+  <% if job.is_published %>
+    <% available_jobs = available_jobs + 1 %>
+  <% end %>
+<% end %>
+<%# End %>
+<footer class="pv1-ns ph2-m bg-white-ns bt-ns b--light-gray-ns">
+  <div class="mw64_5 center cf">
+    <div class="dn db-ns fl-ns w-30-ns">
+      <p class="ma0 lato gray fw3">2016 © Materiales Vallejo</p>
+    </div>
+    <div class="db-ns fl-ns w-70-ns">
+      <ul class="ma0 pa0 list tr-ns">
+        <% data.footer.sections.each_with_index do |section, s| %>
+          <% if section.is_dynamic && available_jobs > 0 || section.is_dynamic != true %>
+            <li class="db dib-ns tc bt b--light-gray bt-0-ns">
+              <a class="db pv1_5 pv0-ns pl2-ns lato gray hover-dark-gray link bg-almost-white bg-white-ns no-underline" href="<%= section.url %>" target="<% if section.target %>_blank<% end %>"><%= section.title %></a>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</footer>

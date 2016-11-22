@@ -1,0 +1,1239 @@
+/*! TACHYONS v4.5.3 | http://tachyons.io */
+/*
+ *
+ *      ________            ______
+ *      ___  __/_____ _________  /______  ______________________
+ *      __  /  _  __ `/  ___/_  __ \_  / / /  __ \_  __ \_  ___/
+ *      _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
+ *      /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
+ *                                 /____/
+ *
+ *    TABLE OF CONTENTS
+ *
+ *    1. External Library Includes
+ *       - Normalize.css | http://normalize.css.github.io
+ *    2. Tachyons Modules
+ *    3. Variables
+ *       - Media Queries
+ *       - Colors
+ *    4. Debugging
+ *       - Debug all
+ *       - Debug children
+ *
+ */
+/* External Library Includes */
+/* normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 4. Crisp font rendering
+ */
+html { font-family: sans-serif; /* 1 */ line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ -webkit-font-smoothing: antialiased; /* 4 */ }
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body { margin: 0; }
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article, footer, header, main, nav, section {/* 1 */ display: block; }
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ * 3. Remove outline glow
+ */
+a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ outline: none /* 3 */}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active, a:hover { outline-width: 0; }
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 { font-size: 2em; margin: .67em 0; }
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img { border-style: none; }
+/* Forms
+   ========================================================================== */
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder { color: inherit; opacity: .54; }
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+/**
+ * Form styling elements
+ */
+textarea, input, select {
+  -webkit-transition: border 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out;
+  outline: none;
+}
+select {
+  background-image: url('../images/icons/dropdown.svg');
+  background-size: 0.5rem;
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+select::-ms-expand {
+  display: none;
+}
+textarea:focus, input:focus, select:focus {
+  border-color: #0080ff;
+}
+/* Overflow
+   ========================================================================== */
+/**
+ * Makes overflow carrusels scroll smoothly on touch devices
+ * Removes scrollbar from non-mobile devices
+ */
+.scrollbar-dn::-webkit-scrollbar { display: none; }
+/* Modules */
+/*
+
+  BOX SIZING
+
+*/
+html, body, div, article, section, main, footer, header, p, ul, li { box-sizing: border-box; }
+/*
+
+   IMAGES
+   Docs: http://tachyons.io/docs/elements/images/
+
+*/
+/* Responsive images! */
+img { max-width: 100%; }
+/*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+.cover { background-size: cover !important; }
+/*
+
+    BACKGROUND POSITION
+
+    Base:
+    bg = background
+
+    Modifiers:
+    -center = center center
+    -top = top center
+    -right = center right
+    -bottom = bottom center
+    -left = center left
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+.bg-center { background-repeat: no-repeat; background-position: center center; }
+/*
+
+    BORDERS
+    Docs: http://tachyons.io/docs/themes/borders/
+
+    Base:
+      b = border
+
+    Modifiers:
+      a = all
+      t = top
+      r = right
+      b = bottom
+      l = left
+      n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.ba { border-style: solid; border-width: 1px; }
+.bt { border-top-style: solid; border-top-width: 1px; }
+.bb { border-bottom-style: solid; border-bottom-width: 1px; }
+/*
+
+   BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Border colors can be used to extend the base
+   border classes ba,bt,bb,br,bl found in the _borders.css file.
+
+   The base border class by default will set the color of the border
+   to that of the current text color. These classes are for the cases
+   where you desire for the text and border colors to be different.
+
+   Base:
+     b = border
+
+   Modifiers:
+   --color-name = each color variable name is also a border color name
+
+*/
+.b--light-gray { border-color: #e0e0e0; }
+.b--white { border-color: #fff; }
+.b--blue { border-color: #0080ff; }
+.b--green { border-color: #27ae60; }
+.b--red { border-color: #eb5757; }
+/*
+
+   BORDER RADIUS
+   Docs: http://tachyons.io/docs/themes/border-radius/
+
+   Base:
+     br   = border-radius
+
+   Modifiers:
+     0    = 0/none
+     1    = 1st step in scale
+     2    = 2nd step in scale
+     3    = 3rd step in scale
+     4    = 4th step in scale
+
+   Literal values:
+     -100 = 100%
+     -pill = 9999px
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.br0125 { border-radius: 0.125rem; }
+.br-100 { border-radius: 100%; }
+/*
+
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     --none   = none
+     --dotted = dotted
+     --dashed = dashed
+     --solid  = solid
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+/*
+
+   BORDER WIDTHS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Base:
+     bw = border-width
+
+   Modifiers:
+     0 = 0 width border
+     1 = 1st step in border-width scale
+     2 = 2nd step in border-width scale
+     3 = 3rd step in border-width scale
+     4 = 4th step in border-width scale
+     5 = 5th step in border-width scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Resets */
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+.shadow-1 { box-shadow: 0 0 16px 2px rgba( 0, 0, 0, .2 ); }
+/*
+
+   CODE
+
+*/
+/*
+
+   COORDINATES
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Use in combination with the position module.
+
+   Base:
+     top
+     bottom
+     right
+     left
+
+   Modifiers:
+     -0  = literal value 0
+     -1  = literal value 1
+     -2  = literal value 2
+     --1 = literal value -1
+     --2 = literal value -2
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.top-0 { top: 0; }
+.top--025 { top: -0.25rem; }
+.right-0 { right: 0; }
+.left-0 { left: 0; }
+.top-1 { top: 1rem; }
+.right-1 { right: 1rem; }
+.bottom-1 { bottom: 1rem; }
+/*
+
+   CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
+
+*/
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+/*
+
+   DISPLAY
+   Docs: http://tachyons.io/docs/layout/display
+
+   Base:
+    d = display
+
+   Modifiers:
+    n     = none
+    b     = block
+    ib    = inline-block
+    it    = inline-table
+    t     = table
+    tc    = table-cell
+    tr    = table-row
+    tcol  = table-column
+    tcolg = table-column-group
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.dn { display: none; }
+.db { display: block; }
+.dib { display: inline-block; }
+.dt { display: table; }
+.dtc { display: table-cell; }
+/*
+  This will set table to full width and then
+  all cells will be equal width
+*/
+/*
+
+  FLEXBOX
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+*/
+/* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+/*
+
+   FLOATS
+   http://tachyons.io/docs/layout/floats/
+
+   1. Floated elements are automatically rendered as block level elements.
+      Setting floats to display inline will fix the double margin bug in
+      ie6. You know... just in case.
+
+   2. Don't forget to clearfix your floats with .cf
+
+   Base:
+     f = float
+
+   Modifiers:
+     l = left
+     r = right
+     n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.fr { float: right; _display: inline; }
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+/* Monospaced Typefaces (for code) */
+/* From http://cssfontstack.com */
+/* Sans-Serif Typefaces */
+.lato { font-family: 'Lato'; }
+/* Serif Typefaces */
+/*
+
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/*
+
+   FONT WEIGHT
+   Docs: http://tachyons.io/docs/typography/font-weight/
+
+   Base
+     fw = font-weight
+
+   Modifiers:
+     1 = literal value 100
+     2 = literal value 200
+     3 = literal value 300
+     4 = literal value 400
+     5 = literal value 500
+     6 = literal value 600
+     7 = literal value 700
+     8 = literal value 800
+     9 = literal value 900
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.fw3 { font-weight: 300; }
+.fw4 { font-weight: 400; }
+.fw7 { font-weight: 700; }
+/*
+
+   FORMS
+
+*/
+/*
+
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Height Scale */
+.h0_25 { height: 0.25rem; }
+.h2_5 { height: 2.5rem; }
+.h3 { height: 3rem; }
+.h10 { height: 10rem; }
+.h20 { height: 20rem; }
+.h25 { height: 25rem; }
+/* Height Percentages - Based off of height of parent */
+.h-100 { height: 100%; }
+/* Screen Height Percentage */
+/* String Properties */
+/*
+
+   LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/*
+
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.lh1_25 { line-height: 1.25 }
+.lh1_5 { line-height: 1.5 }
+/*
+
+   LINKS
+   Docs: http://tachyons.io/docs/elements/links/
+
+*/
+.link { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.link:link, .link:visited { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.link:hover { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.link:active { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.link:focus { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; outline: 1px dotter currentColor; }
+.button { -webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out; }
+.button:hover { -webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out; }
+.button:active { -webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out; }
+.button:focus { -webkit-transition: background-color .25s ease-in-out; transition: background-color .25s ease-in-out; }
+/*
+
+   LISTS
+   http://tachyons.io/docs/elements/lists/
+
+*/
+.list { list-style-type: none; }
+.bullet-circle:before {
+  content: "・";
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #0080ff;
+}
+/*
+
+   MAX WIDTHS
+   Docs: http://tachyons.io/docs/layout/max-widths/
+
+   Base:
+     mw = max-width
+
+   Modifiers
+     1 = 1st step in width scale
+     2 = 2nd step in width scale
+     3 = 3rd step in width scale
+     4 = 4th step in width scale
+     5 = 5th step in width scale
+     6 = 6st step in width scale
+     7 = 7nd step in width scale
+     8 = 8rd step in width scale
+     9 = 9th step in width scale
+
+     -100 = literal value 100%
+
+     -none  = string value none
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Max Width Percentages */
+/* Max Width Scale */
+.mw18 { max-width: 18rem; }
+.mw64_5 { max-width: 64.5rem; }
+.mw68_5 { max-width: 68.5rem; }
+/* Max Width String Properties */
+/*
+
+   WIDTHS
+   Docs: http://tachyons.io/docs/layout/widths/
+
+   Base:
+     w = width
+
+   Modifiers
+     1 = 1st step in width scale
+     2 = 2nd step in width scale
+     3 = 3rd step in width scale
+     4 = 4th step in width scale
+     5 = 5th step in width scale
+
+     -10  = literal value 10%
+     -20  = literal value 20%
+     -25  = literal value 25%
+     -33  = literal value 33%
+     -34  = literal value 34%
+     -40  = literal value 40%
+     -50  = literal value 50%
+     -60  = literal value 60%
+     -75  = literal value 75%
+     -80  = literal value 80%
+     -100 = literal value 100%
+
+     -third = 100% / 3 (Not supported in opera mini or IE8)
+     -auto  = string value auto
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Width Scale */
+.w025 { width: 0.25rem; }
+.w1 { width: 2rem; }
+.w3 { width: 3rem; }
+.w4 { width: 4rem; }
+.w6 { width: 6rem; }
+.w8 { width: 8rem; }
+.w9 { width: 9rem; }
+.w15 { width: 15rem; }
+.w-100 { width: 100%; }
+/*
+
+    OVERFLOW
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+.overflow-x-auto { overflow-x: auto; }
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-scrolling { -webkit-overflow-scrolling: touch; }
+/*
+
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+/*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+/*
+
+   SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
+
+*/
+/* Text colors */
+.dark-gray { color: #333333; }
+.gray { color: #828282; }
+.silver { color: #bdbdbd; }
+.white { color: #fff; }
+.green { color: #27ae60; }
+.blue { color: #0080ff; }
+/* Background colors */
+.bg-almost-white { background-color: #fafafa; }
+.bg-white { background-color: #fff; }
+.bg-green { background-color: #27ae60; }
+.bg-blue { background-color: #0080ff; }
+.bg-red { background-color: #eb5757; }
+.bg-orange { background-color: #f2994a; }
+/* Gradient backgrounds */
+.bg-white-to-fade {
+  background-image: -webkit-linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.bg-fade-to-white {
+  background-image: -webkit-linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+/* 3. Original + Percentage + bg-white-to-fade duplicate */
+/*.bg-white-to-fade {
+  background-image: -webkit-linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1) 35%, rgba(255,255,255,0));
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1) 35%, rgba(255,255,255,0));
+}
+.bg-fade-to-white {
+  background-image: -webkit-linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,1) 35%, rgba(255,255,255,0));
+  background-image: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,1) 35%, rgba(255,255,255,0));
+}*/
+/* 2. Original + Percentage */
+/*.bg-fade-to-white {
+  background-image: -webkit-linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0) 25%, rgba(255,255,255,1));
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0) 25%, rgba(255,255,255,1));
+}*/
+/*
+
+   SKINS:PSEUDO
+
+   Customize the color of an element when
+   it is focused or hovered over.
+
+ */
+.hover-dark-gray:hover { color: #333333; }
+.hover-dark-gray:focus { color: #333333; }
+.hover-dark-blue:hover { color: #0070df; }
+.hover-dark-blue:focus { color: #0070df; }
+.hover-blue:hover { color: #0080ff; }
+.hover-blue:focus { color: #0080ff; }
+.hover-bg-dark-green:hover { background-color: #219653; }
+.hover-bg-dark-green:focus { background-color: #219653; }
+.hover-bg-dark-blue:hover { background-color: #0070df; }
+.hover-bg-dark-blue:focus { background-color: #0070df; }
+/* Variables */
+/*
+   SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Base:
+     p = padding
+     m = margin
+
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.pa0 { padding: 0; }
+.pa0_5 { padding: 0.5rem; }
+.pv0_5 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.pv1 { padding-top: 1rem; padding-bottom: 1rem; }
+.pv1_5 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.pv3 { padding-top: 3rem; padding-bottom: 3rem; }
+.pv4 { padding-top: 4rem; padding-bottom: 4rem; }
+.pv6 { padding-top: 6rem; padding-bottom: 6rem; }
+.pv8 { padding-top: 8rem; padding-bottom: 8rem; }
+.pv16 { padding-top: 16rem; padding-bottom: 16rem; }
+.ph1 { padding-right: 1rem; padding-left: 1rem; }
+.ph1_5 { padding-right: 1.5rem; padding-left: 1.5rem; }
+.ph2 { padding-right: 2rem; padding-left: 2rem; }
+.ph3 { padding-right: 3rem; padding-left: 3rem; }
+.pt1_5 { padding-top: 1.5rem; }
+.pr0_5 { padding-right: 0.5rem; }
+.pb2 { padding-bottom: 2rem; }
+.pb3 { padding-bottom: 3rem; }
+.pb4 { padding-bottom: 4rem; }
+.pl0_5 { padding-left: 0.5rem; }
+.pl2 { padding-left: 2rem; }
+.ma0 { margin: 0; }
+.mv4 { margin-top: 4rem; margin-bottom: 4rem; }
+.mh1_5 { margin-right: 1.5rem; margin-left: 1.5rem; }
+.mt1 { margin-top: 1rem; }
+.mt1_5 { margin-top: 1.5rem; }
+.mt4 { margin-top: 4rem; }
+.mr0_5 { margin-right: 0.5rem; }
+.mr1 { margin-right: 1rem; }
+.mr2 { margin-right: 2rem; }
+.mb0_25 { margin-bottom: 0.25rem; }
+.mb0_5 { margin-bottom: 0.5rem; }
+.mb1 { margin-bottom: 1rem; }
+.mb1_5 { margin-bottom: 1.5rem; }
+.mb2 { margin-bottom: 2rem; }
+.mb3 { margin-bottom: 3rem; }
+.mb4 { margin-bottom: 4rem; }
+/* Special */
+.ptc { padding-top: 3.1525rem; }
+/*
+
+  TABLES
+  Docs: http://tachyons.io/docs/elements/tables/
+
+*/
+/*
+
+   TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.no-underline { text-decoration: none; }
+/*
+
+  TEXT ALIGN
+  Docs: http://tachyons.io/docs/typography/text-align/
+
+  Base
+    t = text-align
+
+  Modifiers
+    l = left
+    r = right
+    c = center
+
+  Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+*/
+.tc { text-align: center; }
+/*
+
+   TEXT TRANSFORM
+   Docs: http://tachyons.io/docs/typography/text-transform/
+
+   Base:
+     tt = text-transform
+
+   Modifiers
+     c = capitalize
+     l = lowercase
+     u = uppercase
+     n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/*
+
+   TYPE SCALE
+   Docs: http://tachyons.io/docs/typography/scale/
+
+   Base:
+    f = font-size
+
+   Modifiers
+     1 = 1st step in size scale
+     2 = 2nd step in size scale
+     3 = 3rd step in size scale
+     4 = 4th step in size scale
+     5 = 5th step in size scale
+     6 = 6th step in size scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+/*
+ * For Hero/Marketing Titles
+ *
+ * These generally are too large for mobile
+ * so be careful using them on smaller screens.
+ * */
+/* Type Scale */
+.f075 { font-size: 0.75rem; }
+.f0875 { font-size: 0.875rem; }
+.f1 { font-size: 1rem; }
+.f15 { font-size: 1.5rem; }
+.f2 { font-size: 2rem; }
+/*
+
+   TYPOGRAPHY
+   http://tachyons.io/docs/typography/measure/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Measure is limited to ~66 characters */
+/* Measure is limited to ~80 characters */
+/* Measure is limited to ~45 characters */
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+/*
+
+   UTILITIES
+
+*/
+/* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
+ * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
+ * Make sure there are no height and width attributes on the embedded media.
+ * Adapted from: https://github.com/suitcss/components-flex-embed
+ *
+ * Example:
+ *
+ * <div class="aspect-ratio aspect-ratio--16x9">
+ *  <iframe class="aspect-ratio--object"></iframe>
+ * </div>
+ *
+ * */
+.aspect-ratio { height: 0; position: relative; }
+.aspect-ratio--1x1 { padding-bottom: 100%; }
+.aspect-ratio--object { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
+.center { margin-right: auto; margin-left: auto; }
+/*
+
+   VISIBILITY
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/*
+    Text that is hidden but accessible
+    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+/*
+
+   WHITE SPACE
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.ws-normal { white-space: normal; }
+.nowrap { white-space: nowrap; }
+/*
+
+   VERTICAL ALIGN
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.v-mid { vertical-align: middle; }
+/*
+
+  HOVER EFFECTS
+  Docs: http://tachyons.io/docs/themes/hovers/
+
+    - Dim
+    - Hide Child
+    - Underline text
+    - Grow
+    - Pointer
+    - Shadow
+
+*/
+/*
+
+  Dim element on hover by adding the dim class.
+
+*/
+
+.dim { opacity: 1; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+.dim:hover, .dim:focus { opacity: .15; }
+.dim:active { opacity: .8; }
+/*
+
+  Hide child & reveal on hover:
+
+  Put the hide-child class on a parent element and any nested element with the
+  child class will be hidden and displayed on hover or focus.
+
+  <div class="hide-child">
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+    <div class="child"> Hidden until hover or focus </div>
+  </div>
+*/
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+/* Add pointer on hover */
+.cursor-pointer { cursor: pointer; }
+.cursor-auto { cursor: auto; }
+.pe-auto { pointer-events: auto; }
+.pe-none { pointer-events: none; }
+/*
+   Add shadow on hover.
+
+   Performant box-shadow animation pattern from
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
+*/
+/* Combine with classes in skins and skins-pseudo for
+ * thousands of different transition possibilities. */
+/*
+
+  Z-INDEX
+
+  Base
+    z = z-index
+
+  Modifiers
+    -0 = literal value 0
+    -1 = literal value 1
+    -2 = literal value 2
+    -3 = literal value 3
+    -4 = literal value 4
+    -5 = literal value 5
+    -999 = literal value 999
+    -9999 = literal value 9999
+
+    -max = largest accepted z-index value as integer
+
+    -inherit = string value inherit
+    -initial = string value initial
+    -unset = string value unset
+
+  MDN: https://developer.mozilla.org/en/docs/Web/CSS/z-index
+  Spec: http://www.w3.org/TR/CSS2/zindex.html
+  Articles:
+    https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+
+  Tips on extending:
+  There might be a time worth using negative z-index values.
+  Or if you are using tachyons with another project, you might need to
+  adjust these values to suit your needs.
+
+*/
+.z-1 { z-index: 1; }
+.z-2 { z-index: 2; }
+.z-999 { z-index: 999; }
+/*
+
+  STYLES
+
+  Add custom styles here.
+
+*/
+/* Variables */
+/* Importing here will allow you to override any variables in the modules */
+/*
+
+   Tachyons
+   COLOR VARIABLES
+
+   Grayscale
+   - Solids
+   - Transparencies
+   Colors
+
+*/
+/*
+
+  CUSTOM MEDIA QUERIES
+
+  Media query values can be changed to fit your own content.
+  There are no magic bullets when it comes to media query width values.
+  They should be declared in em units - and they should be set to meet
+  the needs of your content. You can also add additional media queries,
+  or remove some of the existing ones.
+
+  These media queries can be referenced like so:
+
+  @media (--breakpoint-not-small) {
+    .medium-and-larger-specific-style {
+      background-color: red;
+    }
+  }
+
+  @media (--breakpoint-medium) {
+    .medium-screen-specific-style {
+      background-color: red;
+    }
+  }
+
+  @media (--breakpoint-large) {
+    .large-and-larger-screen-specific-style {
+      background-color: red;
+    }
+  }
+
+*/
+/* Media Queries */
+/* Debugging */
+/*
+
+  DEBUG CHILDREN
+  Docs: http://tachyons.io/docs/debug/
+
+  Just add the debug class to any element to see outlines on its
+  children.
+
+*/
+/*
+
+   DEBUG GRID
+   http://tachyons.io/docs/debug-grid/
+
+   Can be useful for debugging layout issues
+   or helping to make sure things line up perfectly.
+   Just tack one of these classes onto a parent element.
+
+*/
+/* Uncomment out the line below to help debug layout issues */
+/* @import './_debug'; */
+@media screen and (min-width: 30em) {
+  /* Display */
+  .dn-ns { display: none; }
+  .db-ns { display: block; }
+  .dib-ns { display: inline-block; }
+  .fl-ns { float: left; display: inline; }
+  /* Widths */
+  .w-25-ns { width: 25%; }
+  .w-30-ns { width: 30%; }
+  .w-50-ns { width: 50%; }
+  .w-70-ns { width: 70%; }
+  .w-auto-ns { width: auto; }
+  .mw18-ns { max-width: 18rem; }
+  .mw28-ns { max-width: 28rem; }
+  .mw40-ns { max-width: 40rem; }
+  .mw42_5-ns { max-width: 42.5rem; }
+  .mw64_5-ns { max-width: 64.5rem; }
+  .mw68_5-ns { max-width: 68.5rem; }
+  .w-sixth-ns { width: calc( 100% / 6 ); }
+  /* Fonts */
+  .f2-ns { font-size: 2rem; }
+  .f3-ns { font-size: 3rem; }
+  /* Type */
+  .tr-ns { text-align: right; }
+  /* Borders */
+ .bt-ns { border-top-style: solid; border-top-width: 1px; }
+ .bt-0-ns { border-top-width: 0; }
+ /* Spacing */
+ .center-ns { margin-right: auto; margin-left: auto; }
+ .mr1-ns { margin-right: 1rem; }
+ .mb0-ns { margin-bottom: 0; }
+ .mb1-ns { margin-bottom: 1rem; }
+ .mb2-ns { margin-bottom: 2rem; }
+ .mb4-ns { margin-bottom: 4rem; }
+ .mt4-ns { margin-top: 4rem; }
+ .pl2-ns { padding-left: .5rem; }
+ .pr2-ns { padding-right: .5rem; }
+ .pv0-ns { padding-top: 0rem; padding-bottom: 0rem; }
+ .pv0_5-ns { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+ .pv1-ns { padding-top: 1rem; padding-bottom: 1rem; }
+ .pv1_5-ns { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+ .pv8-ns { padding-top: 8rem; padding-bottom: 8rem; }
+ .pv16-ns { padding-top: 16rem; padding-bottom: 16rem; }
+ .ph0_5-ns { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+ .ph1-ns { padding-right: 1rem; padding-left: 1rem; }
+ .pr0_5-ns { padding-right: 0.5rem; }
+ .pr2-ns { padding-right: 2rem; }
+ .pl0_5-ns { padding-left: 0.5rem; }
+ .pl2-ns { padding-left: 2rem; }
+ .ptc { padding-top: 4.375rem; }
+ /* Colors */
+ .bg-white-ns { background-color: white; }
+ .bg-almost-white-ns { background-color: #fafafa; }
+ /* Borders */
+ .b--light-gray-ns { border-color: #e0e0e0; }
+ /* Aspect */
+ .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  /* Widths */
+ .w-10-m { width: 10%; }
+ .w-80-m { width: 80%; }
+ /* Spacing */
+ .ph2-m { padding-right: 2rem; padding-left: 2rem; }
+ .mt4-m { margin-top: 4rem; }
+}
+@media screen and (min-width: 60em) {
+  /* Display */
+ .db-l { display: block; }
+ /* Position */
+ .top-45 { top: 45%; }
+ .left-4 { left: -4rem; }
+ .right-4 { right: -4rem; }
+ .left--4 { left: -4rem; }
+ .right--4 { right: -4rem; }
+ .left-25 { left: 10%; }
+ .right-25 { right: 10%; }
+ /* Widths */
+ .mw64-l { max-width: 64rem; }
+ .w-20-l { width: 20%; }
+ .w-60-l { width: 60%; }
+ /* Overflow */
+ .overflow-x-hidden-l { overflow: hidden; }
+ /* Spacing */
+ .ph0-l { padding-left: 0; padding-right: 0; }
+ .ph4-l { padding-left: 4rem; padding-right: 4rem; }
+}

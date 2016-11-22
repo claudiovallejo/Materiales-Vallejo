@@ -1,0 +1,12 @@
+{
+  "title": "Aplicación Recibida",
+  "subtitle": "Muchas gracias por aplicar! Estaremos en contacto contigo en los próximos días. Que tengas buen día!",
+  "image": {
+    "path": "images/icons/enviado.svg",
+    "alt": "Mensaje ha sido enviado exitosamente."
+  },
+  "action": {
+    "title": "Ir a Inicio",
+    "path": "/"
+  }
+}

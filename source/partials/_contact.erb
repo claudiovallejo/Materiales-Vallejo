@@ -1,0 +1,60 @@
+<div class="mw18 mw42_5-ns center cf">
+  <div class="fl-ns w-50-ns">
+    <div class="mb2 mb1-ns">
+      <div class="mb2">
+        <h2 class="ma0 mb0_5 fw4 f1 lato dark-gray"><%= data.contact.section.phone.title %></h2>
+        <a class="js-phone lato blue hover-dark-blue no-underline" href="tel:<%= pretty_number data.contact.number %>"><%= data.contact.number %></a>
+      </div>
+      <div class="mb2-ns">
+        <h2 class="ma0 mb0_5 fw4 f1 lato dark-gray"><%= data.contact.section.email.title %></h2>
+        <a class="lato blue hover-dark-blue no-underline" href="mailto:<%= data.contact.email %>"><%= data.contact.email %></a>
+      </div>
+    </div>
+    <%# Config %>
+    <% weekdays = data.contact.schedules[0].hours %>
+    <% saturdays = data.contact.schedules[1].hours %>
+    <%# End %>
+    <div class="mb2 mb0-ns">
+      <div class="mb2">
+        <h2 class="ma0 mb0_5 fw4 f1 lato dark-gray"><%= data.contact.section.address.title %></h2>
+        <p class="ma0 mb0_25 lato gray f1 fw4 lh1_25"><%= data.contact.address.street %></p>
+        <p class="ma0 mb0_25 lato gray f1 fw4 lh1_25"><%= data.contact.address.sector %></p>
+        <p class="ma0 mb0_25 lato gray f1 fw4 lh1_25"><%= data.contact.address.city %>, <%= data.contact.address.state %> <%= data.contact.address.zip_code %></p>
+      </div>
+      <div class="">
+        <h2 class="js-schedule ma0 mb0_5 fw4 f1 lato dark-gray"><%= data.contact.section.schedule.opens %></h2>
+        <p class="ma0 mb1 lato gray f1 fw4 lh1_25">Entre semana de <%= pretty_hour weekdays.opens %> a <%= pretty_hour weekdays.lunch %></br>y de <%= pretty_hour weekdays.afternoon %> a <%= pretty_hour weekdays.closes %>.</p>
+        <p class="ma0 lato gray f1 fw4">Sábados de <%= pretty_hour saturdays.opens %> a <%= pretty_hour saturdays.closes %>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="fl-ns w-50-ns">
+    <div id="map" class="h25 w-100 mb1 bg-almost-white"></div>
+    <a class="lato blue hover-dark-blue f1 fw4 no-underline" href="<%= data.contact.address.url %>" target="_blank"><%= data.contact.maps %></a>
+  </div>
+ <script>
+   /*
+
+     Google Maps
+
+   */
+   //  Google Map initializer function
+   function initMap() {
+     var materialesVallejo = {lat: 25.864598, lng: -97.515169};
+     var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 14,
+       center: materialesVallejo,
+       zoomControl: true,
+       scrollWheel: false,
+       disableDefaultUI: true
+     });
+     var marker = new google.maps.Marker({
+       position: materialesVallejo,
+       map: map
+     });
+   }
+ </script>
+ <script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRMxhHqi5eSFxss3GWjhxE_Xb6C2S6JFQ&callback=initMap">
+ </script>
+</div>

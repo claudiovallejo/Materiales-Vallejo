@@ -1,0 +1,30 @@
+<%# Jobs Banner %>
+<%# Config %>
+<% available_jobs = 0 %>
+<% available_job = "" %>
+<% data.jobs.list.each do |job| %>
+  <% if job.is_published %>
+    <% available_jobs = available_jobs + 1 %>
+    <% available_job = job %>
+  <% end %>
+<% end %>
+<%# End %>
+<%# Content %>
+<% if available_jobs > 0 %>
+  <section class="pv8 ph1_5 bt b--light-gray">
+    <header class="mw18 mw28-ns center lato tc">
+      <h1 class="ma0 mb1 f15 fw4 lh01"><%= data.jobs.banner.title %></h1>
+      <% if available_jobs === 1 %>
+        <p class="ma0 mb2 f1 fw4 lh1_5 gray"><%= available_job.ad_subtitle %></p>
+      <% else %>
+        <p class="ma0 mb2 f1 fw4 lh1_5 gray"><%= data.jobs.banner.subtitle %></p>
+      <% end %>
+    </header>
+    <% if available_jobs === 1 %>
+      <a class="db center w8 pv0_5 lato white fw7 tc hover-bg-dark-blue button br0125 bg-blue no-underline" href="/empleos/<%= pretty_url available_job.title %>"><%= data.jobs.banner.buttons.single %></a>
+    <% else %>
+      <a class="db center w8 pv1 ph1 lato white fw7 tc bg-blue hover-bg-dark-blue br0125 button no-underline" href="/empleos"><%= data.jobs.banner.buttons.multiple %></a>
+    <% end %>
+  </section>
+<% end %>
+<%# End %>

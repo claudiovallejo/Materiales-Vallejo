@@ -1,0 +1,22 @@
+<meta property="og:url" content="<%= data.meta.url %>">
+<meta property="og:type" content="<%= data.meta.type %>">
+<meta property="og:title" content="<%= data.meta.title %>">
+<meta property="og:description" content="<%= data.meta.description %>">
+<meta property="og:image" content="<%= data.meta.images.og %>">
+<!-- <%= data.meta.comments.og %> -->
+<meta name="twitter:card" content="<%= data.meta.card %>">
+<meta name="twitter:title" content="<%= data.meta.title %>">
+<meta name="twitter:description" content="<%= data.meta.description %>">
+<meta name="twitter:image" content="<%= data.meta.images.twitter %>">
+<!-- <%= data.meta.comments.twitter %> -->
+<% data.meta.favicons.each do |favicon| %>
+  <% favicon.sizes.each do |size| %>
+    <link rel="<%= favicon.rel %>" sizes="<%= size %>" href="/images/metas/<%= favicon.rel %>-<%= size %><%= favicon.extension %>">
+  <% end %>
+<% end %>
+<% data.meta.tiles.each do |meta| %>
+  <meta name="<%= meta.name %>" content="<%= meta.content %>">
+<% end %>
+<!-- <%= data.meta.comments.favicons %> -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">

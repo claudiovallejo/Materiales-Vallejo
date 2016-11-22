@@ -1,0 +1,35 @@
+---
+title: Test Job Detail
+layout: main
+dynamic: false
+---
+<%# Config %>
+<% job = locals[:job] %>
+<%# End %>
+<main class="mw64_5 center ph1_5 ph2-m ph0-l ptc cf">
+  <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+  <div class="fl-ns w-80-m w-60-l">
+    <article class="mt4">
+      <a class="db ma0 mb4 lato f1 fw4 blue hover-dark-blue link no-underline" href="/empleos"><span class="dib mr0_5">←</span>Regresar a Empleos</a>
+      <header class="mb4">
+        <h1 class="ma0 mb0_5 lato dark-gray f15 fw4"><%= job.title %></h1>
+        <h3 class="ma0 lato silver f1 fw4"><%= job.subtitle %></h3>
+      </header>
+      <%# Config %>
+      <% sl = job.sections.length - 1 %>
+      <%# End %>
+      <% job.sections.each_with_index do |section, s| %>
+        <div class="<% if s != sl %>mb2<% else %>mb4<% end %>">
+          <h3 class="ma0 mb1 lato dark-gray f1 fw4"><%= section.title %></h3>
+          <p class="lato gray f1 fw4 lh1_5"><%= section.content %></p>
+          <% if s === sl %>
+            <a class="dib w8 mt4 pv1 ph1_5 lato fw7 no-underline tc white button bg-blue hover-bg-dark-blue br0125" href="/empleos/<%= pretty_url job.title %>/aplicacion">
+              Aplicar
+            </a>
+          <% end %>
+        </div>
+      <% end %>
+    </article>
+  </div>
+  <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+</main>

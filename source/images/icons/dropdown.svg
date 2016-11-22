@@ -1,0 +1,17 @@
+<svg width="8" height="18" viewBox="0 0 8 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Dropdown</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-15668 -900)" figma:type="canvas">
+<g id="Dropdown" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 15676 918)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(15668 900)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 7L 4 0L 8 7L 0 7Z"/>
+</defs>
+</svg>

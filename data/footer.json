@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "is_dynamic": false,
+      "title": "Empresa",
+      "url": "/empresa",
+      "target": false
+    },
+    {
+      "is_dynamic": true,
+      "title": "Empleos",
+      "url": "/empleos",
+      "target": false
+    },
+    {
+      "is_dynamic": false,
+      "title": "Aviso",
+      "url": "/aviso",
+      "target": false
+    },
+    {
+      "is_dynamic": false,
+      "title": "Código Fuente",
+      "url": "https://github.com/materialesvallejo/sitio",
+      "target": true
+    }
+  ]
+}

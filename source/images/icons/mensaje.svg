@@ -1,0 +1,18 @@
+<svg width="22" height="14" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>mensaje</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-559 -330)" figma:type="canvas">
+<g id="mensaje" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(559 330)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(559 330)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(559 330)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="translate(559 330)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 21.539 0.432357L 11 10.3158L 0.461034 0.432357C 0.295734 0.277339 0.405433 0 0.632048 0L 21.368 0C 21.5946 0 21.7043 0.277339 21.539 0.432357Z"/>
+<path id="path1_fill" d="M 7.07143 7.36842L 0.461034 13.5676C 0.295734 13.7227 0.405433 14 0.632048 14L 21.368 14C 21.5946 14 21.7043 13.7227 21.539 13.5676L 14.9286 7.36842L 11 11.0526L 7.07143 7.36842Z"/>
+<path id="path2_fill" d="M 0 13.2632L 0 0.736842L 6.67857 7L 0 13.2632Z"/>
+<path id="path3_fill" d="M 22 0.736842L 15.3214 7L 22 13.2632L 22 0.736842Z"/>
+</defs>
+</svg>

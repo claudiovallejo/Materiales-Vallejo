@@ -1,0 +1,36 @@
+<svg width="129" height="128" viewBox="0 0 129 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>entregas-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-6 280)" figma:type="canvas">
+<g id="entregas-2" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 2" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(7 -280)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="entregas" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Stroke 1" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_stroke" transform="translate(35.0848 -217.834)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Fill 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(29.7552 -232.959)" fill="#FEFEFE" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Stroke 5" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(29.7552 -232.959)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Stroke 7" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="translate(71.8343 -208.641)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Stroke 9" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path5_stroke" transform="translate(8 -238)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 128 0L 128 128L 0 128L 0 0Z"/>
+<path id="path1_stroke" d="M 5.00369 15.3139L 4.31377 13.982L 4.31377 13.982L 5.00369 15.3139ZM 34.5679 0L 35.2578 1.33192L 34.5679 -1.5L 34.5679 0ZM -1.5 0L -1.5 12.1112L 1.5 12.1112L 1.5 0L -1.5 0ZM -1.5 12.1112C -1.5 15.8083 2.3179 18.3944 5.69361 16.6459L 4.31377 13.982C 3.09113 14.6153 1.5 13.7377 1.5 12.1112L -1.5 12.1112ZM 5.69361 16.6459L 35.2578 1.33192L 33.8779 -1.33192L 4.31377 13.982L 5.69361 16.6459ZM 34.5679 -1.5L 0 -1.5L 0 1.5L 34.5679 1.5L 34.5679 -1.5Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 0 0L 61.9496 0C 64.1389 0 65.0801 2.87537 63.3442 4.25611L 34.3503 27.2828L 0 18.1893L 0 0Z"/>
+<path id="path3_stroke" d="M 0 0L 0 -1.5C -0.828427 -1.5 -1.5 -0.828427 -1.5 3.33067e-16L 0 0ZM 63.3442 4.25611L 64.2771 5.43074L 64.278 5.43002L 63.3442 4.25611ZM 34.3503 27.2828L 33.9664 28.7328C 34.4242 28.854 34.9123 28.7519 35.2832 28.4574L 34.3503 27.2828ZM 0 18.1893L -1.5 18.1893C -1.5 18.8699 -1.04179 19.4652 -0.383868 19.6393L 0 18.1893ZM 0 1.5L 61.9496 1.5L 61.9496 -1.5L 0 -1.5L 0 1.5ZM 61.9496 1.5C 62.2976 1.5 62.5709 1.7034 62.6934 2.07717C 62.817 2.45473 62.7233 2.83336 62.4105 3.0822L 64.278 5.43002C 67.0325 3.239 65.6765 -1.5 61.9496 -1.5L 61.9496 1.5ZM 62.4114 3.08148L 33.4174 26.1081L 35.2832 28.4574L 64.2771 5.43074L 62.4114 3.08148ZM 34.7342 25.8327L 0.383868 16.7392L -0.383868 19.6393L 33.9664 28.7328L 34.7342 25.8327ZM 1.5 18.1893L 1.5 0L -1.5 0L -1.5 18.1893L 1.5 18.1893Z"/>
+<path id="path4_stroke" d="M 1.5 6.82069C 1.5 3.83131 3.82522 1.5 6.58381 1.5L 6.58381 -1.5C 2.06929 -1.5 -1.5 2.27529 -1.5 6.82069L 1.5 6.82069ZM 6.58381 1.5C 9.3424 1.5 11.6676 3.83131 11.6676 6.82069L 14.6676 6.82069C 14.6676 2.27529 11.0983 -1.5 6.58381 -1.5L 6.58381 1.5ZM 11.6676 6.82069C 11.6676 9.81007 9.3424 12.1414 6.58381 12.1414L 6.58381 15.1414C 11.0983 15.1414 14.6676 11.3661 14.6676 6.82069L 11.6676 6.82069ZM 6.58381 12.1414C 3.82522 12.1414 1.5 9.81007 1.5 6.82069L -1.5 6.82069C -1.5 11.3661 2.06929 15.1414 6.58381 15.1414L 6.58381 12.1414Z"/>
+<path id="path5_stroke" d="M 70.0293 37.628C 70.8294 37.8428 71.6521 37.3682 71.8669 36.5681C 72.0816 35.768 71.6071 34.9453 70.8069 34.7306L 70.0293 37.628ZM 15.1714 21.3517L 13.7435 21.8112L 13.9937 22.5887L 14.7826 22.8005L 15.1714 21.3517ZM 8.30132 0L 9.72923 -0.459438L 9.39442 -1.5L 8.30132 -1.5L 8.30132 0ZM 0 -1.5C -0.828427 -1.5 -1.5 -0.828427 -1.5 0C -1.5 0.828427 -0.828427 1.5 0 1.5L 0 -1.5ZM 70.8069 34.7306L 15.5602 19.903L 14.7826 22.8005L 70.0293 37.628L 70.8069 34.7306ZM 16.5993 20.8923L 9.72923 -0.459438L 6.87342 0.459438L 13.7435 21.8112L 16.5993 20.8923ZM 8.30132 -1.5L 0 -1.5L 0 1.5L 8.30132 1.5L 8.30132 -1.5Z"/>
+</defs>
+</svg>

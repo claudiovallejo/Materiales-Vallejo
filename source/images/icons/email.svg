@@ -1,0 +1,50 @@
+<svg width="26" height="18" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(753 -1814)" figma:type="canvas">
+<rect x="-753" y="1814" width="26" height="18" fill="#FFFFFF"/>
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -791 -499L -471 -499L -471 2522L -791 2522L -791 -499Z" fill="#FFFFFF"/>
+</mask>
+<g id="index-mobile" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Contact" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Base" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(-791 1534)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Button" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Base" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(-767 1795.67)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(-767 1795.67)" fill="#E0E0E0" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Stroke" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(-752 1814.67)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Stroke" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="translate(-736 1822.67)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Stroke" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path5_stroke" transform="translate(-752 1822.67)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Stroke" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path6_stroke" transform="translate(-752 1814.67)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 320 0L 320 711L 0 711L 0 0Z"/>
+<path id="path1_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 270 0C 271.105 0 272 0.895431 272 2L 272 52C 272 53.1046 271.105 54 270 54L 2 54C 0.895431 54 0 53.1046 0 52L 0 2Z"/>
+<path id="path2_stroke_2x" d="M 2 1L 270 1L 270 -1L 2 -1L 2 1ZM 271 2L 271 52L 273 52L 273 2L 271 2ZM 270 53L 2 53L 2 55L 270 55L 270 53ZM 1 52L 1 2L -1 2L -1 52L 1 52ZM 2 -1C 0.343146 -1 -1 0.343146 -1 2L 1 2C 1 1.44772 1.44772 1 2 1L 2 -1ZM 270 1C 270.552 1 271 1.44772 271 2L 273 2C 273 0.343146 271.657 -1 270 -1L 270 1ZM 271 52C 271 52.5523 270.552 53 270 53L 270 55C 271.657 55 273 53.6569 273 52L 271 52ZM 2 53C 1.44772 53 1 52.5523 1 52L -1 52C -1 53.6569 0.343146 55 2 55L 2 53Z"/>
+<path id="path3_stroke" d="M 23.2 15.5L 0.8 15.5L 0.8 16.5L 23.2 16.5L 23.2 15.5ZM 0.8 15.5C 0.634542 15.5 0.5 15.3655 0.5 15.2L -0.5 15.2C -0.5 15.9177 0.0822576 16.5 0.8 16.5L 0.8 15.5ZM 0.5 15.2L 0.5 0.8L -0.5 0.8L -0.5 15.2L 0.5 15.2ZM 0.5 0.8C 0.5 0.634542 0.634542 0.5 0.8 0.5L 0.8 -0.5C 0.0822576 -0.5 -0.5 0.0822576 -0.5 0.8L 0.5 0.8ZM 0.8 0.5L 23.2 0.5L 23.2 -0.5L 0.8 -0.5L 0.8 0.5ZM 23.2 0.5C 23.3655 0.5 23.5 0.634542 23.5 0.8L 24.5 0.8C 24.5 0.0822576 23.9177 -0.5 23.2 -0.5L 23.2 0.5ZM 23.5 0.8L 23.5 15.2L 24.5 15.2L 24.5 0.8L 23.5 0.8ZM 23.5 15.2C 23.5 15.3655 23.3655 15.5 23.2 15.5L 23.2 16.5C 23.9177 16.5 24.5 15.9177 24.5 15.2L 23.5 15.2Z"/>
+<path id="path4_stroke" d="M 8.35355 7.64645L 0.353553 -0.353553L -0.353553 0.353553L 7.64645 8.35355L 8.35355 7.64645Z"/>
+<path id="path5_stroke" d="M 0.353553 8.35355L 8.35355 0.353553L 7.64645 -0.353553L -0.353553 7.64645L 0.353553 8.35355Z"/>
+<path id="path6_stroke" d="M 12 12L 11.6464 12.3536L 12 12.7071L 12.3536 12.3536L 12 12ZM 23.6464 -0.353553L 11.6464 11.6464L 12.3536 12.3536L 24.3536 0.353553L 23.6464 -0.353553ZM 12.3536 11.6464L 0.353553 -0.353553L -0.353553 0.353553L 11.6464 12.3536L 12.3536 11.6464Z"/>
+</defs>
+</svg>

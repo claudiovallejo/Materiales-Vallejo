@@ -1,0 +1,584 @@
+{
+  "categories": [
+    {
+      "name": "Cementos",
+      "products": [
+        {
+          "name": "Cemento Gris",
+          "brand": "Cemex",
+          "image": {
+            "path": "images/products/cementos/cemento-gris.jpg",
+            "alt": "Bulto de Cemento Gris de Monterrey de 50kg marca Cemex."
+          },
+          "info": [
+            {
+              "title": "Pesos disponibles",
+              "details": ["25kg", "50kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Cemento Blanco",
+          "brand": "Cemex",
+          "image": {
+            "path": "images/products/cementos/cemento-blanco.jpg",
+            "alt": "Bulto de Cemento Blanco de Monterrey de 25kg marca Cemex."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["25kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Cemento Impercem",
+          "brand": "Cemex",
+          "image": {
+            "path": "images/products/cementos/cemento-impercem.jpg",
+            "alt": "Bulto de Cemento Impercem de Monterrey de 50kg marca Cemex."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["50kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aceros",
+      "products": [
+        {
+          "name": "Varilla Corrugada",
+          "brand": "Ternium",
+          "image": {
+            "path": "images/products/aceros/varilla-corrugada.jpg",
+            "alt": "Varilla Corrugada de 5/8\" marca Ternium."
+          },
+          "info": [
+            {
+              "title": "Grosores disponibles",
+              "details": ["5/16\"", "3/8\"", "1/2\"", "5/8\"", "3/4\"", "1\"", "1.25\"", "1.50\""]
+            },
+            {
+              "title": "Largos disponibles",
+              "details": ["9.15mts", "12mts"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Varilla o Kilo"]
+            }
+          ]
+        },
+        {
+          "name": "Anillos",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/aceros/anillos.jpg",
+            "alt": "Anillo de construcción cuadrado marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Medidas disponibles",
+              "details": ["Cualquier figura", "Cualquier dimensión"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Varilla o Kilo"]
+            }
+          ]
+        },
+        {
+          "name": "Castillos",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/aceros/castillos.jpg",
+            "alt": "Castillo de construcción de 15x15x4cm marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Medidas disponibles",
+              "details": ["15x15x3cm", "15x15x4cm", "15x20x4cm"]
+            },
+            {
+              "title": "Largo disponible",
+              "details": ["6mts"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Castillo"]
+            }
+          ]
+        },
+        {
+          "name": "Mallacero",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/aceros/mallacero.jpg",
+            "alt": "Mallacero calibre #6 marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Calibres disponibles",
+              "details": ["#4", "#6"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Metro Cuadrado"]
+            }
+          ]
+        },
+        {
+          "name": "Alambre Recocido",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/aceros/alambre-recocido.jpg",
+            "alt": "Alambre Recocido de 1/8\" marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Grosores disponibles",
+              "details": ["1/8\""]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Kilo"]
+            }
+          ]
+        },
+        {
+          "name": "Alambrón",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/aceros/alambron.jpg",
+            "alt": "Alambrón de 1/4\" marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Grosores disponibles",
+              "details": ["1/4\""]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Kilo"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blocks",
+      "products": [
+        {
+          "name": "Block",
+          "brand": "Abasa",
+          "image": {
+            "path": "images/products/blocks/block.jpg",
+            "alt": "Block de Monterrey del #6 marca Abasa."
+          },
+          "info": [
+            {
+              "title": "Dimensiones disponibles",
+              "details": ["#4", "#6", "#8"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Block"]
+            }
+          ]
+        },
+        {
+          "name": "Block Térmico",
+          "brand": "Abasa",
+          "image": {
+            "path": "images/products/blocks/block-termico.jpg",
+            "alt": "Block Térmico del #6 marca Abasa."
+          },
+          "info": [
+            {
+              "title": "Dimensiones disponibles",
+              "details": ["#6", "#8"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Block"]
+            }
+          ]
+        },
+        {
+          "name": "Adobón",
+          "brand": "Abasa",
+          "image": {
+            "path": "images/products/blocks/adobon.jpg",
+            "alt": "Adobón de 6x12x24cm marca Abasa."
+          },
+          "info": [
+            {
+              "title": "Medida disponible",
+              "details": ["6x12x24cm"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Block"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Estucos",
+      "products": [
+        {
+          "name": "Uniblock",
+          "brand": "Uniblock",
+          "image": {
+            "path": "images/products/estucos/uniblock.jpg",
+            "alt": "Bulto de Uniblock de 40kg marca Uniblock."
+          },
+          "info": [
+            {
+              "title": "Peso disponibles",
+              "details": ["40kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Plaster",
+          "brand": "Uniblock",
+          "image": {
+            "path": "images/products/estucos/plaster.jpg",
+            "alt": "Bulto de Plaster de 40kg marca Uniblock."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["40kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Plasterblock",
+          "brand": "Uniblock",
+          "image": {
+            "path": "images/products/estucos/plasterblock.jpg",
+            "alt": "Bulto de Plasterblock de 40kg marca Uniblock."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["40kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arenas",
+      "products": [
+        {
+          "name": "Arena Cribada",
+          "brand": "Crisul",
+          "image": {
+            "path": "images/products/arenas/arena-cribada.jpg",
+            "alt": "Bulto de Arena Cribada de 40kg marca Crisul."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["40kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Arena Triturada",
+          "brand": "Abasa",
+          "image": {
+            "path": "images/products/arenas/arena-triturada.jpg",
+            "alt": "Arena Triturada del #5 marca Abasa."
+          },
+          "info": [
+            {
+              "title": "Calibre disponible",
+              "details": ["#5"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Metro Cúbico"]
+            }
+          ]
+        },
+        {
+          "name": "Grava Triturada",
+          "brand": "Abasa",
+          "image": {
+            "path": "images/products/arenas/grava-triturada.jpg",
+            "alt": "Grava Triturada del #2 marca Abasa."
+          },
+          "info": [
+            {
+              "title": "Calibre disponible",
+              "details": ["#2"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Metro Cúbico"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Adhesivos",
+      "products": [
+        {
+          "name": "Adhesivo Universal",
+          "brand": "Uniblock",
+          "image": {
+            "path": "images/products/adhesivos/adhesivo-universal.jpg",
+            "alt": "Bulto de Adhesivo Universal de 20kg marca Uniblock."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["20kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Crest Blanco",
+          "brand": "Crest",
+          "image": {
+            "path": "images/products/adhesivos/crest-blanco.jpg",
+            "alt": "Bulto de Crest Blanco de 20kg marca Crest."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["20kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        },
+        {
+          "name": "Unitile",
+          "brand": "Uniblock",
+          "image": {
+            "path": "images/products/adhesivos/unitile.jpg",
+            "alt": "Bulto de Unitile de 20kg marca Uniblock."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["20kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Impermeabilizantes",
+      "products": [
+        {
+          "name": "Weno 3 Años",
+          "brand": "Thermotek",
+          "image": {
+            "path": "images/products/impermeabilizantes/weno-3-anos.jpg",
+            "alt": "Cubeta de Weno de 3 Años de 20lts marca Thermotek."
+          },
+          "info": [
+            {
+              "title": "Volúmen disponible",
+              "details": ["20lts"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Cubeta"]
+            }
+          ]
+        },
+        {
+          "name": "Weno 5 Años",
+          "brand": "Thermotek",
+          "image": {
+            "path": "images/products/impermeabilizantes/weno-5-anos.jpg",
+            "alt": "Cubeta de Weno de 5 Años de 20lts marca Thermotek."
+          },
+          "info": [
+            {
+              "title": "Volúmen disponible",
+              "details": ["20lts"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Cubeta"]
+            }
+          ]
+        },
+        {
+          "name": "Cemento Acrílico",
+          "brand": "Thermotek",
+          "image": {
+            "path": "images/products/impermeabilizantes/cemento-acrilico.jpg",
+            "alt": "Cubeta de Cemento Acrílico de 10lts marca Thermotek."
+          },
+          "info": [
+            {
+              "title": "Volúmen disponible",
+              "details": ["10lts"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Cubeta"]
+            }
+          ]
+        },
+        {
+          "name": "Sellador",
+          "brand": "Thermotek",
+          "image": {
+            "path": "images/products/impermeabilizantes/sellador.jpg",
+            "alt": "Cubeta de Sellador de 10lts marca Thermotek."
+          },
+          "info": [
+            {
+              "title": "Vólumen disponible",
+              "details": ["10lts"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Cubeta"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yeso",
+      "products": [
+        {
+          "name": "Yeso",
+          "brand": "Yesera Monterrey",
+          "image": {
+            "path": "images/products/yeso/yeso.jpg",
+            "alt": "Bulto de Yeso de 40kg marca Yesera Monterrey."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["40kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cal",
+      "products": [
+        {
+          "name": "Cal",
+          "brand": "Grupo Calidra",
+          "image": {
+            "path": "images/products/cal/cal.jpg",
+            "alt": "Bulto de Cal de 40kg marca Grupo Calidra."
+          },
+          "info": [
+            {
+              "title": "Peso disponible",
+              "details": ["40kg"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Bulto"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ferretería",
+      "products": [
+        {
+          "name": "Clavo de Acero",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/ferreteria/clavo-de-acero.jpg",
+            "alt": "Clavo de Acero del #8 marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Calibres disponibles",
+              "details": ["#6", "#8", "#16"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Kilo"]
+            }
+          ]
+        },
+        {
+          "name": "Clavo de Madera",
+          "brand": "Deacero",
+          "image": {
+            "path": "images/products/ferreteria/clavo-de-madera.jpg",
+            "alt": "Clavo de Acero del #8 marca Deacero."
+          },
+          "info": [
+            {
+              "title": "Calibres disponibles",
+              "details": ["#6", "#8"]
+            },
+            {
+              "title": "Se vende por",
+              "details": ["Kilo"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

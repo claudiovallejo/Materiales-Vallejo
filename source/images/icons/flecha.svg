@@ -1,0 +1,12 @@
+<svg width="12" height="6" viewBox="0 0 12 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-68 -278)" figma:type="canvas">
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(68 278)" fill="#262626" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0.75 0L 0 0.666656L 5.25002 5.33334L 5.99998 6L 6.74998 5.33334L 12 0.666687L 11.25 0L 6 4.66669L 0.75 0Z"/>
+</defs>
+</svg>

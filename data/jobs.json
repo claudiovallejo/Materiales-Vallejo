@@ -1,0 +1,94 @@
+{
+  "page": {
+    "title": "Trabaja con Nosotros",
+    "subtitle": "Buscamos a gente capacitada con ganas de trabajar que se una a nuestro equipo en nuestra oficina de Matamoros."
+  },
+  "banner": {
+    "title": "Trabaja con Nosotros",
+    "subtitle": "Hay varios puestos disponibles y estamos buscando a gente local que se una a nuestro equipo.",
+    "buttons": {
+      "single": "Ver Detalles",
+      "multiple": "Ver Empleos"
+    }
+  },
+  "application": {
+    "title": "Favor de llenar la aplicación con los datos mas actualizados.",
+    "opens": "Si tienes alguna pregunta no dudes en marcarnos al <a class=\"blue no-underline\" href=\"tel:86883393\">(868) 816 3393</a>, estamos abiertos.",
+    "lunch": "Si tienes alguna pregunta, no dudes en enviarnos un mensaje a <a class=\"blue no-underline\" href=\"matvallejo@outlook.com\">matvallejo@outlook.com.</a>",
+    "closes": "Si tienes alguna pregunta, no dudes en enviarnos un mensaje a <a class=\"blue no-underline\" href=\"mailto:matvallejo@outlook.com\">matvallejo@outlook.com.</a>"
+  },
+  "list": [
+    {
+      "is_published": false,
+      "api_key": "95a5898a50a025a64ceff5eb92a45eab",
+      "title": "Secretaria",
+      "subtitle": "Publicado el 17 de Nov. del 2016",
+      "link_title": "Ver Detalle",
+      "ad_subtitle": "Buscamos a una secretaria local con experiencia atendiendo clientes que se una a nuestro equipo.",
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas y buscamos a una secretaria local que se una a nuestro equipo y esté dispuesta a escuchar y servir a nuestros clientes."
+        },
+        {
+          "title": "Detalles del Puesto",
+          "content": "Buscamos a una persona capaz de utilizar softwares de facturación y con capacidad e interés de aprender las bases de contabilidad. El trabajo require saber manejar correo electrónico, cotizaciones, cobrar y atender las llamadas de los clientes."
+        }
+      ]
+    },
+    {
+      "is_published": false,
+      "api_key": "95a5898a50a025a64ceff5eb92a45eab",
+      "title": "Contadora",
+      "subtitle": "Publicado el 17 de Nov. del 2016",
+      "link_title": "Ver Detalle",
+      "ad_subtitle": "Buscamos a una contadora con experiencia en llevar un sistema computarizado de contabilidad que se una a nuestro equipo.",
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas que lo que mas nos importa es el cliente y buscamos una persona con experiencia en llevar un sistema computarizado de contabilidad relacionado con las ventas."
+        },
+        {
+          "title": "Detalles del Puesto",
+          "content": "Buscamos a una persona capaz de utilizar softwares de contabilidad y con capacidad e interés de aprender todas las áreas administrativas del negocio. El trabajo require saber manejar correo electrónico y un sistema de software contable."
+        }
+      ]
+    },
+    {
+      "is_published": false,
+      "api_key": "95a5898a50a025a64ceff5eb92a45eab",
+      "title": "Chofer",
+      "subtitle": "Publicado el 17 de Nov. del 2016",
+      "link_title": "Ver Detalle",
+      "ad_subtitle": "Buscamos a un chofer con experiencia en el manejo de camión que se una a nuestro equipo.",
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas que lo que mas nos importa es el cliente y buscamos una persona con experiencia en el manejo de camión y con capacidad física de cargar y descargar materiales para construcción dentro del área de Matamoros."
+        },
+        {
+          "title": "Detalles del Puesto",
+          "content": "Buscamos a una persona con licencia de chofer, que sepa manejar cualquier tipo de camión y que se encargue del mantenimiento y cuidado del mismo."
+        }
+      ]
+    },
+    {
+      "is_published": false,
+      "api_key": "95a5898a50a025a64ceff5eb92a45eab",
+      "title": "Asistente de Chofer",
+      "subtitle": "Publicado el 17 de Nov. del 2016",
+      "link_title": "Ver Detalle",
+      "ad_subtitle": "Buscamos a un ayudante de chofer con capacidad de cargar y descargar materiales para construcción que se una nuestro equipo.",
+      "sections": [
+        {
+          "title": "Introducción",
+          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas y buscamos una persona con capacidad física de cargar y descargar materiales para construcción."
+        },
+        {
+          "title": "Detalles del Puesto",
+          "content": "Buscamos a una persona dispuesta seguir órdenes de su jefe."
+        }
+      ]
+    }
+  ]
+}

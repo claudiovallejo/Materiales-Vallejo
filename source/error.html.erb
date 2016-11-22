@@ -1,0 +1,24 @@
+---
+title: La Página que Buscas No Existe — Materiales Vallejo
+layout: simple
+dynamic: false
+---
+<%# Config %>
+<% error = data.error %>
+<%# End %>
+<article class="dt w-100 h-100 mw18 mw28-ns center tc">
+  <div class="dtc v-mid center lato">
+    <%= image_tag "#{ error.image.path }", :class => "w3 h3 mb2", :alt => "#{ error.image.alt }" %>
+    <h1 class="ma0 mb1 f15 fw4 lh01"><%= error.title %></h1>
+    <p class="ma0 mb2 f1 fw4 lh1_5 gray"><%= error.subtitle %></p>
+    <% error.actions.each_with_index do |button, b| %>
+      <% if button.is_primary_button %>
+      <a class="db dib-ns center w8 <% if b == 0 %>mb1<% end %> mb0-ns pv1 ph1_5 mr1-ns lato white fw7 no-underline tc bg-blue br0125" href="<%= button.link %>">
+        <%= button.title %>
+      </a>
+      <% else %>
+        <a class="db dib-ns center <% if b == 0 %>mb1<% end %> w8 pv1 ph1_5 lato dark-gray fw7 no-underline tc ba b--dark-gray br0125" href="<%= button.link %><%= data.contact.email %>"><%= button.title %></a>
+      <% end %>
+    <% end %>
+  </div>
+</article>

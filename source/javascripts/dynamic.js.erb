@@ -1,0 +1,367 @@
+/*! getEmPixels  | Author: Tyson Matanich (http://matanich.com), 2013 | License: MIT */
+(function (document, documentElement) {
+  // Enable strict mode
+  "use strict";
+  // Form the style on the fly to result in smaller minified file
+  var important = "!important;";
+  var style = "position:absolute" + important + "visibility:hidden" + important + "width:1em" + important + "font-size:1em" + important + "padding:0" + important;
+  window.getEmPixels = function (element) {
+    var extraBody;
+    if (!element) {
+      // Emulate the documentElement to get rem value (documentElement does not work in IE6-7)
+      element = extraBody = document.createElement("body");
+      extraBody.style.cssText = "font-size:1em" + important;
+      documentElement.insertBefore(extraBody, document.body);
+    }
+    // Create and style a test element
+    var testElement = document.createElement("i");
+    testElement.style.cssText = style;
+    element.appendChild(testElement);
+    // Get the client width of the test element
+    var value = testElement.clientWidth;
+    if (extraBody) {
+      // Remove the extra body element
+      documentElement.removeChild(extraBody);
+    }
+    else {
+      // Remove the test element
+      element.removeChild(testElement);
+    }
+    // Return the em value in pixels
+    return value;
+  };
+}(document, document.documentElement));
+/*
+
+  Product Category Navigation
+  (Cross-browser compatible)
+
+*/
+//  Cache Product Card nodes and carrusel.scrollLeft
+//  Cache Product Card carrusel
+//  x = containerWidth
+//  Δ = delta = maximum scrollLeft value of product carrusel
+//  y = carrusel.offsetWidth
+//  |----- x -----||----- Δ -----|
+//  |------------ y -------------|
+const containerWidth = getEmPixels() * 64.5;
+const $carrusel = document.getElementById('carrusel');
+const delta = $carrusel.offsetWidth - containerWidth;
+const $cards = document.getElementsByClassName('js-card');
+var carruselScroll = $carrusel.scrollLeft;
+//  Cache list of product categories
+<%# Config %>
+<% categories = [] %>
+<% data.products.categories.each do |category| %>
+  <% categories.push(category.name.downcase) %>
+<% end %>
+<%# End %>
+const categories = <%= categories %>;
+//  Category object with offset values of first product card under that category
+var Categories = new Object();
+for (var c = 0; c < categories.length; c++) {
+  for (var i = 0; i < $cards.length; i++) {
+    if ($cards[i].dataset.category === categories[c]) {
+      Categories[categories[c]] = $cards[i].offsetLeft;
+      break;
+    }
+  }
+}
+//  Array mapping scroll value of the first product card of each category
+const scrollValues = [];
+for (var i = 0; i < categories.length; i++) {
+  var value = Categories[categories[i]];
+  scrollValues.push(value);
+}
+//  I'm cheating here! I'm adding this non-existent last scrollValue to make the scroll work. Can't figure out why the last category isn't highlighted.
+scrollValues.push(scrollValues[scrollValues.length - 1] + getEmPixels() * 25);
+//  Creating click event listener for category carrusel
+const $categories = document.getElementsByClassName('js-category');
+for (var c = 0; c < $categories.length; c++) {
+  if (window.attachEvent) {
+    $categories[c].attachEvent('onclick', function(){
+      clearNav();
+      activateNav(this);
+      scrollTo(this.innerHTML);
+    });
+  }
+  else if (window.addEventListener) {
+    $categories[c].addEventListener('click', function(){
+      clearNav();
+      activateNav(this);
+      scrollTo(this.innerHTML);
+    });
+  }
+}
+//  Removes `.blue` active class and adds `.gray` default class to product category linkn
+function clearNav() {
+  for (var c = 0; c < $categories.length; c++) {
+    $categories[c].classList.remove('blue');
+    $categories[c].classList.add('gray');
+  }
+}
+//  Adds '.blue' to clicked navigation link
+function activateNav($element) {
+  $element.classList.add('blue');
+}
+function scrollTo(category) {
+  //  Source: StackOverflow -> Smoothly Scolling to Element Using Vanilla JS
+  //  Path: http://stackoverflow.com/questions/36619959/smoothly-scrolling-to-element-using-vanilla-javascript
+  //
+  const xValue = Categories[category.toLowerCase()];
+  const from = $carrusel.scrollLeft;
+  const by = (xValue - 24) - $carrusel.scrollLeft;
+  highlightArrows(xValue);
+  var currentIteration = 0;
+  /**
+   * get total iterations
+   * 60 -> requestAnimationFrame 60/second
+   * second parameter -> time in seconds for the animation
+   **/
+  var animIterations = Math.round(60 * 0.5);
+  (function scroll() {
+      var value = easeOutCubic(currentIteration, from, by, animIterations);
+      $carrusel.scrollLeft = value;
+      carruselScroll = $carrusel.scrollLeft;
+      currentIteration++;
+      if (currentIteration < animIterations) {
+        requestAnimationFrame(scroll);
+      }
+  })();
+}
+//  Ease-out Cubic animation function
+function easeOutCubic(currentIteration, startValue, changeInValue, totalIterations) {
+    return changeInValue * (Math.pow(currentIteration / totalIterations - 1, 3) + 1) + startValue;
+}
+//
+function horizontalScroll(x) {
+  var from = $carrusel.scrollLeft;
+  var buffer = 24;
+  var by = x + getEmPixels() / 2;
+  var currentIteration = 0;
+  var animIterations = Math.round(60 * 0.5);
+  (function scroll() {
+    var value = easeOutCubic(currentIteration, from, by, animIterations);
+    $carrusel.scrollLeft = value;
+    currentIteration++;
+    if (currentIteration < animIterations) {
+      requestAnimationFrame(scroll);
+    }
+  })();
+}
+/*
+
+  Carrusel Scroll
+
+*/
+//
+if (window.attachEvent) {
+  $carrusel.attachEvent('onscroll', function(){
+    highlightCategories($carrusel.scrollLeft);
+  });
+}
+//
+else if (window.addEventListener) {
+  $carrusel.addEventListener('scroll', function(){
+    highlightCategories($carrusel.scrollLeft);
+  });
+}
+//
+function highlightCategories(scroll) {
+  var carruselScroll = scroll;
+  const delta = (getEmPixels() * (15 + 2)) * 1;
+  for (var i = 0; i < scrollValues.length; i++) {
+    if ((scrollValues[i] - delta) < carruselScroll && carruselScroll < (scrollValues[i + 1] - delta)) {
+      clearNav();
+      activateNav($categories[i]);
+    }
+  }
+}
+/*
+
+  Product Card Desktop Navigation
+  (Cross-browser compatible)
+
+*/
+const $previous = document.getElementsByClassName('js-previous')[0];
+const $next = document.getElementsByClassName('js-next')[0];
+if (window.attachEvent) {
+  $previous.attachEvent('onclick', function(){
+    if ($carrusel.scrollLeft >= scrollValues[0]) {
+      var value = $carrusel.scrollLeft - (getEmPixels() * (15 + 2));
+      highlightArrows(value);
+      highlightCategories($carrusel.scrollLeft);
+      horizontalScroll(scrollToX(-1));
+    }
+  });
+  $next.attachEvent('onclick', function(){
+    if ($carrusel.scrollLeft <= scrollValues[scrollValues.length - 3]) {
+      var value = $carrusel.scrollLeft + (getEmPixels() * (15 + 2));
+      highlightArrows(value);
+      highlightCategories($carrusel.scrollLeft);
+      horizontalScroll(scrollToX(1));
+    }
+  });
+}
+else if (window.addEventListener) {
+  $previous.addEventListener('click', function(){
+    if ($carrusel.scrollLeft >= scrollValues[0]) {
+      var value = $carrusel.scrollLeft - (getEmPixels() * (15 + 2));
+      highlightArrows(value);
+      highlightCategories($carrusel.scrollLeft);
+      horizontalScroll(scrollToX(-1));
+    }
+  });
+  $next.addEventListener('click', function(){
+    if ($carrusel.scrollLeft <= scrollValues[scrollValues.length - 3]) {
+      var value = $carrusel.scrollLeft + (getEmPixels() * (15 + 2));
+      highlightArrows(value);
+      highlightCategories($carrusel.scrollLeft);
+      horizontalScroll(scrollToX(1));
+    }
+  });
+}
+//
+function highlightArrows(scroll) {
+  const $nextFill = $next.getElementsByClassName('js-change')[0];
+  const $previousFill = $previous.getElementsByClassName('js-change')[0];
+  if (scroll <= scrollValues[0]) {
+    $previousFill.classList.add('is-idle');
+    $previousFill.classList.remove('is-active');
+    $previous.classList.add('cursor-auto');
+    $previous.classList.remove('cursor-pointer');
+  }
+  else if (scroll >= scrollValues[scrollValues.length - 3]) {
+    $nextFill.classList.add('is-idle');
+    $nextFill.classList.remove('is-active');
+    $next.classList.add('cursor-auto');
+    $next.classList.remove('cursor-pointer');
+  }
+  else {
+    $nextFill.classList.add('is-active');
+    $nextFill.classList.remove('is-idle');
+    $previousFill.classList.add('is-active');
+    $previousFill.classList.remove('is-idle');
+    $next.classList.remove('cursor-auto');
+    $next.classList.add('cursor-pointer');
+    $previous.classList.remove('cursor-auto');
+    $previous.classList.add('cursor-pointer');
+  }
+}
+//
+function scrollToX(direction) {
+  var x = getEmPixels() * (15 + 2);
+  if (direction != 1) { x = -x;}
+  return x;
+}
+/*
+
+  Product Card Interaction
+  (Cross-browser compatible)
+
+*/
+//  Add an Event Listener for each Product Card
+for (var c = 0; c < $cards.length; c++) {
+  if (window.attachEvent) {
+    $cards[c].attachEvent('onclick', function(){
+      updateCard(this);
+    });
+  }
+  else if (window.addEventListener) {
+    $cards[c].addEventListener('click', function(){
+      updateCard(this);
+    });
+  }
+}
+//  Dispatches Product Card styling-animation functions: rotate and fade
+function updateCard($card) {
+  //  Cache arrow node
+  var $arrow = $card.getElementsByClassName('js-rotate')[0];
+  //  Rotate arrow
+  rotate($arrow);
+  //  Cache image and detail nodes
+  var $image = $card.getElementsByClassName('js-fade')[0];
+  var $detail = $card.getElementsByClassName('js-fade')[1];
+  //  If image is visible, fade image and delay-fade detail
+  if (hasClass($image, 'is-visible')) {
+    fade($image);
+    setTimeout(function(){
+      fade($detail)
+    }, 225);
+  //  Else, fade detail and delay-fade image
+  } else {
+    fade($detail);
+    setTimeout(function(){
+      fade($image)
+    }, 225);
+  }
+}
+//  Toggle rotation classes
+function rotate($node) {
+  $node.classList.toggle('is-up');
+  $node.classList.toggle('is-down');
+}
+//  Toggle fade classes
+function fade($node) {
+  $node.classList.toggle('is-visible');
+  $node.classList.toggle('is-hidden');
+}
+//  Returns Boolean indicating presence of class in element
+function hasClass($node, cls) {
+  return (' ' + $node.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+/*
+
+  Hero Button Navigation
+  (Cross-browser compatible)
+
+*/
+//
+// const $primary = document.getElementById('test');
+// const $secondary = document.getElementById('secondary');
+// const $first_section = document.getElementById('products');
+// const $second_section = document.getElementById('contact');
+// //
+// if (window.attachEvent) {
+//   $primary.attachEvent('onclick', function(){
+//     scrollToItemId(this, $first_section);
+//   });
+//   $secondary.attachEvent('onclick', function(){
+//     scrollToItemId(this, $second_section);
+//   });
+// }
+// //
+// else if (window.addEventListener) {
+//   $primary.addEventListener('click', function(){
+//     scrollToItemId(this, $first_section);
+//   });
+//   $secondary.addEventListener('click', function(){
+//     scrollToItemId(this, $second_section);
+//   });
+// }
+// //
+// function scrollToItemId($button, $section) {
+//   var from = $button.scrollTop;
+//   var test = $section.offsetTop;
+//   var by = test - from;
+//   if (from < $section.offsetTop) {
+//     if ($section.offsetTop > $button.scrollHeight - $button.clientHeight) {
+//       by = ($button.scrollHeight - $button.clientHeight) - $button.scrollTop;
+//     }
+//   }
+//   var currentIteration = 0;
+//   /**
+//    * get total iterations
+//    * 60 -> requestAnimationFrame 60/second
+//    * second parameter -> time in seconds for the animation
+//    **/
+//   var animIterations = Math.round(60 * 0.5);
+//   (function scroll() {
+//     var value = easeOutCubic(currentIteration, from, by, animIterations);
+//     $button.scrollTop = value;
+//     currentIteration++;
+//     if (currentIteration < animIterations) {
+//       requestAnimationFrame(scrollToItemId);
+//     }
+//   })();
+// }

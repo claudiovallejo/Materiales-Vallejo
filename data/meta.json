@@ -1,0 +1,42 @@
+{
+  "url": "https://materialesvallejo.com",
+  "type": "website",
+  "card": "summary",
+  "title": "Materiales para Construcción para todo tipo de obras",
+  "description": "Materialistas de Matamoros, Tamaulipas ofreciendo las mejores marcas en materiales para construcción. Formamos parte de Construrama, la red mas grande de materialistas en México. Ofrecemos servicio a particulares y constructoras y tenemos una red de distribución de materiales con materialistas y ferreterías en nuestra ciudad.",
+  "images": {
+    "og": "images/metas/og-meta-products.jpg",
+    "twitter": "images/metas/twitter-meta-logo.jpg"
+  },
+  "favicons": [
+    {
+      "rel": "apple-touch-icon",
+      "sizes": ["60x60", "72x72", "76x76", "114x114", "120x120", "144x144", "152x152", "180x180"],
+      "extension": ".png"
+    },
+    {
+      "rel": "icon",
+      "sizes": ["16x16", "32x32", "96x96", "192x192"],
+      "extension": ".png"
+    }
+  ],
+  "tiles": [
+    {
+      "name": "msapplication-TileColor",
+      "content": "#ffffff"
+    },
+    {
+      "name": "msapplication-TileImage",
+      "content": "images/metas/apple-touch-icon-144x144.png"
+    },
+    {
+      "name": "theme-color",
+      "content": "#ffffff"
+    }
+  ],
+  "comments": {
+    "og": "To learn more about Open Graph markup, visit Facebook for Developers -> https://developers.facebook.com/docs/sharing/webmasters",
+    "twitter": "To learn more about Twitter's Summary Card, visit Twitter for Developers -> https://dev.twitter.com/cards/types/summary",
+    "favicons": "To generate the favicons, I used frederick-jacques Sketch Favicon Exporter -> https://github.com/frederik-jacques/sketch-favicon-exporter-template"
+  }
+}

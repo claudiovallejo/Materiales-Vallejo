@@ -1,0 +1,50 @@
+<svg width="128" height="128" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>pagos-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-150 280)" figma:type="canvas">
+<g id="pagos-2" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 2" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(150 -280)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="cards" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(157.574 -235.659)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path2_fill" transform="translate(158.836 -234.39)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path3_fill" fill="white" transform="translate(150 -242)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path4_stroke_2x" transform="translate(150 -242)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path5_fill" transform="translate(158.836 -234.39)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path3_fill" fill="white" transform="translate(158.836 -234.39)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path4_stroke_2x" transform="translate(158.836 -234.39)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 6" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path6_fill" transform="translate(158.836 -224.244)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 128 0L 128 128L 0 128L 0 0Z"/>
+<path id="path1_fill" d="M 0 2.53659C 0 1.13567 1.1303 0 2.52459 0L 66.9016 0C 68.2959 0 69.4262 1.13567 69.4262 2.53659L 69.4262 43.1219C 69.4262 44.5229 68.2959 45.6585 66.9016 45.6585L 2.52459 45.6585C 1.1303 45.6585 0 44.5229 0 43.1219L 0 2.53659Z"/>
+<path id="path2_fill" d="M 0 0L 66.9016 0L 66.9016 43.122L 0 43.122L 0 0Z"/>
+<path id="path3_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 64.9016 0C 66.0062 0 66.9016 0.895431 66.9016 2L 66.9016 41.122C 66.9016 42.2265 66.0062 43.122 64.9016 43.122L 2 43.122C 0.895431 43.122 0 42.2265 0 41.122L 0 2Z"/>
+<path id="path4_stroke_2x" d="M 2 2L 64.9016 2L 64.9016 -2L 2 -2L 2 2ZM 64.9016 2L 64.9016 41.122L 68.9016 41.122L 68.9016 2L 64.9016 2ZM 64.9016 41.122L 2 41.122L 2 45.122L 64.9016 45.122L 64.9016 41.122ZM 2 41.122L 2 2L -2 2L -2 41.122L 2 41.122ZM 2 -2C -0.209139 -2 -2 -0.209139 -2 2L 2 2L 2 2L 2 -2ZM 64.9016 2L 64.9016 2L 68.9016 2C 68.9016 -0.209139 67.1108 -2 64.9016 -2L 64.9016 2ZM 64.9016 41.122L 64.9016 45.122C 67.1108 45.122 68.9016 43.3311 68.9016 41.122L 64.9016 41.122ZM 2 41.122L 2 41.122L -2 41.122C -2 43.3311 -0.209139 45.122 2 45.122L 2 41.122Z"/>
+<path id="path5_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 64.9016 0C 66.0062 0 66.9016 0.895431 66.9016 2L 66.9016 39.8537C 66.9016 40.9582 66.0062 41.8537 64.9016 41.8537L 2 41.8537C 0.895431 41.8537 0 40.9582 0 39.8537L 0 2Z"/>
+<path id="path6_fill" d="M 0 0L 66.9016 0L 66.9016 3.80488L 0 3.80488L 0 0Z"/>
+</defs>
+</svg>

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "Materiales para Tu Obra",
+    "subtitle": "Las mejores marcas en materiales para construcción a tu domicilio, obra, o negocio en menos de 24 horas.",
+    "image": {
+      "path": "images/index/portada.jpg",
+      "alt": "Tarimas de blocks de cemento."
+    },
+    "buttons": [
+      {
+        "is_primary": true,
+        "title": "Ver Materiales",
+        "link": "products"
+      },
+      {
+        "is_primary": false,
+        "title": "Contactar",
+        "link": "contact"
+      }
+    ]
+  },
+  "products": {
+    "title": "Materiales",
+    "subtitle": "Encuentra las mejores marcas mas reconocidas del país en materiales para construcción."
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Obtén servicios personalizados para particulares, mayoristas y constructoras."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": {
+      "opens": "La sucursal está abierta, márcanos y dínos en que te podemos servir.",
+      "lunch": "Salimos a la comida, envíanos un mensaje y nos pondremos en contacto al regresar.",
+      "closes": "La sucursal está cerrada, envíanos un mensaje y nos pondremos en contacto lo antes posible."
+    }
+  }
+}

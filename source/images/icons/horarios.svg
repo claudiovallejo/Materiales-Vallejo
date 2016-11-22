@@ -1,0 +1,24 @@
+<svg width="18" height="19" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(749 -1891)" figma:type="canvas">
+<g id="Icon" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-749 1891.67)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-749 1891.67)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(-740 1895.67)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 18 9C 18 13.9706 13.9706 18 9 18C 4.02944 18 0 13.9706 0 9C 0 4.02944 4.02944 0 9 0C 13.9706 0 18 4.02944 18 9Z"/>
+<path id="path1_stroke_2x" d="M 17 9C 17 13.4183 13.4183 17 9 17L 9 19C 14.5228 19 19 14.5228 19 9L 17 9ZM 9 17C 4.58172 17 1 13.4183 1 9L -1 9C -1 14.5228 3.47715 19 9 19L 9 17ZM 1 9C 1 4.58172 4.58172 1 9 1L 9 -1C 3.47715 -1 -1 3.47715 -1 9L 1 9ZM 9 1C 13.4183 1 17 4.58172 17 9L 19 9C 19 3.47715 14.5228 -1 9 -1L 9 1Z"/>
+<path id="path2_stroke" d="M 0 5L -0.5 5L -0.5 5.5L 0 5.5L 0 5ZM -0.5 0L -0.5 5L 0.5 5L 0.5 0L -0.5 0ZM 0 5.5L 5 5.5L 5 4.5L 0 4.5L 0 5.5Z"/>
+</defs>
+</svg>
