@@ -240,23 +240,23 @@
       ]
     },
     {
-      "name": "Estucos",
+      "name": "Stucco",
       "products": [
         {
           "name": "Uniblock",
           "brand": "Uniblock",
           "image": {
-            "path": "images/products/estucos/uniblock.jpg",
-            "alt": "Bulto de Uniblock de 40kg marca Uniblock."
+            "path": "images/products/stucco/uniblock.jpg",
+            "alt": "Uniblock brand 40kg uniblock bag."
           },
           "info": [
             {
-              "title": "Peso disponibles",
+              "title": "Available weight",
               "details": ["40kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Bag"]
             }
           ]
         },
@@ -264,17 +264,17 @@
           "name": "Plaster",
           "brand": "Uniblock",
           "image": {
-            "path": "images/products/estucos/plaster.jpg",
-            "alt": "Bulto de Plaster de 40kg marca Uniblock."
+            "path": "images/products/stucco/plaster.jpg",
+            "alt": "Uniblock brand 40kg plaster bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["40kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
@@ -282,17 +282,17 @@
           "name": "Plasterblock",
           "brand": "Uniblock",
           "image": {
-            "path": "images/products/estucos/plasterblock.jpg",
-            "alt": "Bulto de Plasterblock de 40kg marca Uniblock."
+            "path": "images/products/stucco/plasterblock.jpg",
+            "alt": "Uniblock brand 40kg plasterblock bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["40kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         }
