@@ -358,41 +358,41 @@
       ]
     },
     {
-      "name": "Adhesivos",
+      "name": "Adhesive",
       "products": [
         {
-          "name": "Adhesivo Universal",
+          "name": "Universal Adhesive",
           "brand": "Uniblock",
           "image": {
-            "path": "images/products/adhesivos/adhesivo-universal.jpg",
-            "alt": "Bulto de Adhesivo Universal de 20kg marca Uniblock."
+            "path": "images/products/adhesive/universal-adhesive.jpg",
+            "alt": "Uniblock brand 20kg universal adhesive bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["20kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Crest Blanco",
+          "name": "White Crest",
           "brand": "Crest",
           "image": {
-            "path": "images/products/adhesivos/crest-blanco.jpg",
+            "path": "images/products/adhesive/white-crest.jpg",
             "alt": "Bulto de Crest Blanco de 20kg marca Crest."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["20kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
@@ -400,17 +400,17 @@
           "name": "Unitile",
           "brand": "Uniblock",
           "image": {
-            "path": "images/products/adhesivos/unitile.jpg",
-            "alt": "Bulto de Unitile de 20kg marca Uniblock."
+            "path": "images/products/adhesive/unitile.jpg",
+            "alt": "Uniblock brand 20kg unitile bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["20kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         }
