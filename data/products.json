@@ -17,7 +17,7 @@
             },
             {
               "title": "Sold by",
-              "details": ["Bag"]
+              "details": ["Unit"]
             }
           ]
         },
@@ -35,7 +35,7 @@
             },
             {
               "title": "Sold by",
-              "details": ["Bag"]
+              "details": ["Unit"]
             }
           ]
         },
@@ -53,7 +53,7 @@
             },
             {
               "title": "Sold by",
-              "details": ["Bag"]
+              "details": ["Unit"]
             }
           ]
         }
@@ -256,7 +256,7 @@
             },
             {
               "title": "Sold by",
-              "details": ["Bag"]
+              "details": ["Unit"]
             }
           ]
         },
@@ -299,50 +299,50 @@
       ]
     },
     {
-      "name": "Arenas",
+      "name": "Sand",
       "products": [
         {
-          "name": "Arena Cribada",
+          "name": "Sifted Sand",
           "brand": "Crisul",
           "image": {
-            "path": "images/products/arenas/arena-cribada.jpg",
-            "alt": "Bulto de Arena Cribada de 40kg marca Crisul."
+            "path": "images/products/sand/sifted-sand.jpg",
+            "alt": "Crisul brand 40kg sand bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["40kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Arena Triturada",
+          "name": "Shredded Sand",
           "brand": "Abasa",
           "image": {
-            "path": "images/products/arenas/arena-triturada.jpg",
-            "alt": "Arena Triturada del #5 marca Abasa."
+            "path": "images/products/sand/shredded-sand.jpg",
+            "alt": "Abasa brand #5 caliber shredded sand."
           },
           "info": [
             {
-              "title": "Calibre disponible",
+              "title": "Available caliber",
               "details": ["#5"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Metro Cúbico"]
+              "title": "Sold by",
+              "details": ["Cubic Meter"]
             }
           ]
         },
         {
-          "name": "Grava Triturada",
+          "name": "Shredded Gravel",
           "brand": "Abasa",
           "image": {
-            "path": "images/products/arenas/grava-triturada.jpg",
-            "alt": "Grava Triturada del #2 marca Abasa."
+            "path": "images/products/sand/shredded-gravel.jpg",
+            "alt": "Abasa brand #2 caliber shredded gravel."
           },
           "info": [
             {
@@ -350,8 +350,8 @@
               "details": ["#2"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Metro Cúbico"]
+              "title": "Sold by",
+              "details": ["Cubic meter"]
             }
           ]
         }
