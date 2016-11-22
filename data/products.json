@@ -60,121 +60,121 @@
       ]
     },
     {
-      "name": "Aceros",
+      "name": "Steel",
       "products": [
         {
-          "name": "Varilla Corrugada",
+          "name": "Corrugated Rebar",
           "brand": "Ternium",
           "image": {
-            "path": "images/products/aceros/varilla-corrugada.jpg",
-            "alt": "Varilla Corrugada de 5/8\" marca Ternium."
+            "path": "images/products/steel/corrugated-rebar.jpg",
+            "alt": "Ternium brand 5/8\" corrugated rebar."
           },
           "info": [
             {
-              "title": "Grosores disponibles",
+              "title": "Available widths",
               "details": ["5/16\"", "3/8\"", "1/2\"", "5/8\"", "3/4\"", "1\"", "1.25\"", "1.50\""]
             },
             {
-              "title": "Largos disponibles",
+              "title": "Available lengths",
               "details": ["9.15mts", "12mts"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Varilla o Kilo"]
+              "title": "Sold by",
+              "details": ["Unit or Weight"]
             }
           ]
         },
         {
-          "name": "Anillos",
+          "name": "Construction Rings",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/aceros/anillos.jpg",
-            "alt": "Anillo de construcción cuadrado marca Deacero."
+            "path": "images/products/steel/construction-rings.jpg",
+            "alt": "Deacero brand square construction ring."
           },
           "info": [
             {
-              "title": "Medidas disponibles",
-              "details": ["Cualquier figura", "Cualquier dimensión"]
+              "title": "Availability",
+              "details": ["Any shape", "Any size"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Varilla o Kilo"]
+              "title": "Sold by",
+              "details": ["Unit or Weight"]
             }
           ]
         },
         {
-          "name": "Castillos",
+          "name": "Rebar Structure",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/aceros/castillos.jpg",
-            "alt": "Castillo de construcción de 15x15x4cm marca Deacero."
+            "path": "images/products/steel/rebar-structure.jpg",
+            "alt": "Deacero 15x15x4cm rebar structure."
           },
           "info": [
             {
-              "title": "Medidas disponibles",
+              "title": "Available measurements",
               "details": ["15x15x3cm", "15x15x4cm", "15x20x4cm"]
             },
             {
-              "title": "Largo disponible",
+              "title": "Available lengths",
               "details": ["6mts"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Castillo"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Mallacero",
+          "name": "Wire Mesh",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/aceros/mallacero.jpg",
-            "alt": "Mallacero calibre #6 marca Deacero."
+            "path": "images/products/steel/wire-mesh.jpg",
+            "alt": "Deacero #6 caliber wire mesh."
           },
           "info": [
             {
-              "title": "Calibres disponibles",
+              "title": "Available calibers",
               "details": ["#4", "#6"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Metro Cuadrado"]
+              "title": "Sold by",
+              "details": ["Square Meter"]
             }
           ]
         },
         {
-          "name": "Alambre Recocido",
+          "name": "String Wire",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/aceros/alambre-recocido.jpg",
-            "alt": "Alambre Recocido de 1/8\" marca Deacero."
+            "path": "images/products/steel/string-wire.jpg",
+            "alt": "Deacero brand 1/8\" string wire."
           },
           "info": [
             {
-              "title": "Grosores disponibles",
+              "title": "Available widths",
               "details": ["1/8\""]
             },
             {
-              "title": "Se vende por",
-              "details": ["Kilo"]
+              "title": "Sold by",
+              "details": ["Weight"]
             }
           ]
         },
         {
-          "name": "Alambrón",
+          "name": "Wire",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/aceros/alambron.jpg",
-            "alt": "Alambrón de 1/4\" marca Deacero."
+            "path": "images/products/steel/wire.jpg",
+            "alt": "Deacero brand 1/4\" wire."
           },
           "info": [
             {
-              "title": "Grosores disponibles",
+              "title": "Available widths",
               "details": ["1/4\""]
             },
             {
-              "title": "Se vende por",
-              "details": ["Kilo"]
+              "title": "Sold by",
+              "details": ["Weight"]
             }
           ]
         }
