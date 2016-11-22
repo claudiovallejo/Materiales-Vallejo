@@ -1,19 +1,19 @@
 {
-  "title": "La página que buscas no existe",
-  "subtitle": "Si estas batallando en encontrar lo que buscas envíanos un mensaje, estamos para ayudarte.",
+  "title": "Page not Found",
+  "subtitle": "The page you're looking for doesn't exist. Let us now if we can help you find something.",
   "image": {
     "path": "images/icons/error.svg",
-    "alt": "La página que buscas no existe."
+    "alt": "Question mark icon for page not found."
   },
   "actions": [
     {
       "is_primary_button": true,
-      "title": "Ir a Inicio",
+      "title": "Homepage",
       "link": "/"
     },
     {
       "is_primary_button": false,
-      "title": "Enviar Mensaje",
+      "title": "Send Email",
       "link": "mailto:"
     }
   ]
