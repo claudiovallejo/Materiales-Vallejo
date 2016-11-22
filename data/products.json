@@ -181,59 +181,59 @@
       ]
     },
     {
-      "name": "Blocks",
+      "name": "Block",
       "products": [
         {
           "name": "Block",
           "brand": "Abasa",
           "image": {
             "path": "images/products/blocks/block.jpg",
-            "alt": "Block de Monterrey del #6 marca Abasa."
+            "alt": "Abasa brand #6 block."
           },
           "info": [
             {
-              "title": "Dimensiones disponibles",
+              "title": "Available types",
               "details": ["#4", "#6", "#8"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Block"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Block Térmico",
+          "name": "Thermic Block",
           "brand": "Abasa",
           "image": {
-            "path": "images/products/blocks/block-termico.jpg",
-            "alt": "Block Térmico del #6 marca Abasa."
+            "path": "images/products/blocks/thermic-block.jpg",
+            "alt": "Abasa brand #6 thermic block."
           },
           "info": [
             {
-              "title": "Dimensiones disponibles",
+              "title": "Available types",
               "details": ["#6", "#8"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Block"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Adobón",
+          "name": "Adobe",
           "brand": "Abasa",
           "image": {
-            "path": "images/products/blocks/adobon.jpg",
-            "alt": "Adobón de 6x12x24cm marca Abasa."
+            "path": "images/products/blocks/adobe.jpg",
+            "alt": "Abasa brand 6x12x24cm adobe block."
           },
           "info": [
             {
-              "title": "Medida disponible",
+              "title": "Available measurement",
               "details": ["6x12x24cm"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Block"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         }
