@@ -1,38 +1,38 @@
 {
   "hero": {
-    "title": "Materiales para Tu Obra",
-    "subtitle": "Las mejores marcas en materiales para construcción a tu domicilio, obra, o negocio en menos de 24 horas.",
+    "title": "Build your next project",
+    "subtitle": "Building materials and tailored services for wholesellers, construction firms, and retailers.",
     "image": {
-      "path": "images/index/portada.jpg",
-      "alt": "Tarimas de blocks de cemento."
+      "path": "images/index/hero.jpg",
+      "alt": "Building block tower."
     },
     "buttons": [
       {
         "is_primary": true,
-        "title": "Ver Materiales",
+        "title": "View Products",
         "link": "products"
       },
       {
         "is_primary": false,
-        "title": "Contactar",
+        "title": "Get in Touch",
         "link": "contact"
       }
     ]
   },
   "products": {
-    "title": "Materiales",
-    "subtitle": "Encuentra las mejores marcas mas reconocidas del país en materiales para construcción."
+    "title": "Products",
+    "subtitle": "Find the best building material brands in the nation for projects of any size."
   },
   "services": {
-    "title": "Servicios",
-    "subtitle": "Obtén servicios personalizados para particulares, mayoristas y constructoras."
+    "title": "Services",
+    "subtitle": "Enjoy tailored services for individuals, wholesellers, and construction firms."
   },
   "contact": {
-    "title": "Contacto",
+    "title": "Contact",
     "subtitle": {
-      "opens": "La sucursal está abierta, márcanos y dínos en que te podemos servir.",
-      "lunch": "Salimos a la comida, envíanos un mensaje y nos pondremos en contacto al regresar.",
-      "closes": "La sucursal está cerrada, envíanos un mensaje y nos pondremos en contacto lo antes posible."
+      "opens": "We're open. Give us a call and let us know how we can help you today.",
+      "lunch": "We're out for lunch. Send us an email and we'll get in touch later this afternoon.",
+      "closes": "We're closed. Send us an email and we'll get in touch as soon as possible."
     }
   }
 }
