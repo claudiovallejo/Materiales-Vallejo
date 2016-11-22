@@ -1,27 +1,27 @@
 {
   "hero": {
     "image": {
-      "path": "images/about/portada.jpg",
-      "alt": "Camión de Materiales Vallejo cargado con tarimas de Cemento Gris de Monterrey de 50kg."
+      "path": "images/about/hero.jpg",
+      "alt": "Materiales Vallejo truck loaded with 50kg gray cement bags."
     }
   },
   "title": "Materiales Vallejo",
-  "subtitle": "Est. 1985 en Matamoros, Tamaulipas",
+  "subtitle": "Est. 1985 in Matamoros, Tamaulipas",
   "details": [
-    "Somos materialistas de Matamoros, Tamaulipas sirviendo y ayudando al desarrollo de nuestra comunidad. Formamos parte de Construrama, la red mas grande de materialistas en el país. Ofrecemos servicios personalizados para suministrar las necesidades de cualquier proyecto o negocio.",
+    "We are a building material store from Matamoros, Tamaulipas aiding in the growth and development of our community. We are part of Construrama, the nation's largest network of material stores. We offer tailored services to fulfill the needs of any construction project or business.",
 
-    "Vendemos Cemento Monterrey, el cemento de mejor calidad del país, y somos uno de los distribuidores mas importantes de cemento en la región. Contamos con acceso a canales de distribución y provedores que nos permiten suministrar proyectos de cualquier tipo y tamaño.",
+    "We excel in selling Cemex Gray Cement and are one of the top distributors of cement in our community. We have access to distribution and manufacturing channels that enable us to satisfy our client needs.",
 
-    "Nuestro propósito es ofrecerte las mejores marcas en materiales para construcción a los mejores precios. Servimos desde a particulares trabajando en obras personales hasta obras de gobierno desarrollando comunidades enteras. También servimos a una red de materialistas y ferreterías en la ciudad y nos encantaría que formaras parte de ella. Ofrecemos planes de crédito flexibles, precios de fábrica, y envíos gratuitos el mismo día.",
+    "Our purpose is to provide the best building material brands in the nation at the lowest prices. We serve the needs of a diverse market—from individuals working on home rennovation projects to government departments developing entire communities. We currently work with a close network of building and hardware stores throughout our community and take care of their building material needs. We offer flexible credit payments, manufacturing prices, and free shipping.",
 
-    "Nos encantaría ayudarte a suministrar las necesidades de tu negocio o siguiente obra."
+    "We'd love to hear about you and how we can satisfy the needs of your current business or upcoming project."
   ],
   "contact": {
-    "phone_title": "Marcar a oficina",
-    "address_title": "Visitar oficina",
-    "email_title": "Enviar correo",
-    "opens": "Estamos abiertos, márcanos o visítanos.",
-    "lunch": "Salimos a la comida, pero envíanos un mensaje y nos pondremos en contacto esta tarde.",
-    "closes": "Estamos cerrados por el momento, pero envíanos un mensaje y nos pondremos en contacto lo antes posible."
+    "phone_title": "Call Store",
+    "address_title": "Visite Store",
+    "email_title": "Send us an email",
+    "opens": "We're open, give us a call or stop by our store.",
+    "lunch": "We're out for lunch. Send us an email and we'll get in touch this afternoon.",
+    "closes": "We're closed at the moment. Send us an email and we'll get in touch as soon as possible."
   }
 }
