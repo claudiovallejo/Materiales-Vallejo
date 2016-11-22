@@ -494,23 +494,23 @@
       ]
     },
     {
-      "name": "Yeso",
+      "name": "Plaster",
       "products": [
         {
-          "name": "Yeso",
+          "name": "Plaster",
           "brand": "Yesera Monterrey",
           "image": {
-            "path": "images/products/yeso/yeso.jpg",
-            "alt": "Bulto de Yeso de 40kg marca Yesera Monterrey."
+            "path": "images/products/plaster/plaster.jpg",
+            "alt": "Yesera Monterrey brand 40kg plaster bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["40kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         }
