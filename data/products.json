@@ -540,41 +540,41 @@
       ]
     },
     {
-      "name": "Ferretería",
+      "name": "Hardware",
       "products": [
         {
-          "name": "Clavo de Acero",
+          "name": "Steel Nail",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/ferreteria/clavo-de-acero.jpg",
-            "alt": "Clavo de Acero del #8 marca Deacero."
+            "path": "images/products/hardware/steel-nail.jpg",
+            "alt": "Deacero brand #8 type steel nail."
           },
           "info": [
             {
-              "title": "Calibres disponibles",
+              "title": "Available types",
               "details": ["#6", "#8", "#16"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Kilo"]
+              "title": "Sold by",
+              "details": ["Weight"]
             }
           ]
         },
         {
-          "name": "Clavo de Madera",
+          "name": "Wood Nail",
           "brand": "Deacero",
           "image": {
-            "path": "images/products/ferreteria/clavo-de-madera.jpg",
-            "alt": "Clavo de Acero del #8 marca Deacero."
+            "path": "images/products/hardware/wood-nail.jpg",
+            "alt": "Deacero brand #8 type wood nail."
           },
           "info": [
             {
-              "title": "Calibres disponibles",
+              "title": "Available types",
               "details": ["#6", "#8"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Kilo"]
+              "title": "Sold by",
+              "details": ["Weight"]
             }
           ]
         }
