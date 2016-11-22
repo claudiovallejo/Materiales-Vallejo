@@ -1,40 +1,40 @@
 {
-  "title": "Aviso de Privacidad",
-  "introduction": "Este Aviso de Privacidad siempre estará actualizado con información relacionada a todas las funcionalidades de nuestra página que recaben datos de tu visita.",
+  "title": "Privacy Policy",
+  "introduction": "This privacy policy will always contain the latest details related to all the website features that gather data from your visit.",
   "sections": [
     {
-      "title": "Datos recabados",
+      "title": "Collected data",
       "details": [
         {
           "type": "text",
           "list": [
-            "Usamos <a class=\"blue no-underline\" href=\"https://analytics.google.com/analytics/web/\" target=\"_blank\">Google Analytics</a>, un servicio gratuito ofrecido por Google que obtiene información de tu visita a nuestro sitio. Los datos que recabamos no nos permiten saber tu nombre, sexo, número de teléfono, email o otro dato personal que nos permita identificarte. Algunos datos recabados por Google Analytics incluyen—"
+            "We use <a class=\"blue no-underline\" href=\"https://analytics.google.com/analytics/web/\" target=\"_blank\">Google Analytics</a>, a free service offered by Google that gathers information from your visit. The data Google gather’s doesn’t enable us to know your name, sex, telephone number, email or any other personal detail that identifies you. Some of the data Google tracks include—"
           ]
         },
         {
           "type": "bullets",
           "list": [
-            "Fecha de tu visita",
-            "Tiempo total de tu visita",
-            "Secciones visitadas",
-            "Sitio previo a tu visita",
-            "Navegador utilizado",
-            "Dispositivo utilizado"
+            "Date of visit",
+            "Total visit time",
+            "Pages visited",
+            "Site from where you’re visiting",
+            "Browser used",
+            "Device used"
           ]
         }
       ]
     },
     {
-      "title": "Uso de datos",
+      "title": "Data use",
       "details": [
         {
           "type": "text",
           "list": [
-            "Recabamos datos de tu visita para que tu estancia en nuestra página te sea agradable, cómoda, y útil. Queremos que fácilmente encuentres la información que busques y que lo puedas hacer de cualquier dispositivo y navegador.",
+            "We track data to ensure our website provides an enjoyable, comfortable, and useful experience for you. Our goal is to design an experience that provides the information you’re looking for and that it’s accessible through most devices and browsers.",
 
-            "Si acaso no quieres que Google Analytics nos envíe datos acerca de tu visita, entra a <a class=\"blue no-underline\" href=\"https://tools.google.com/dlpage/gaoptout?hl=es\" target=\"_blank\">ésta página</a>, donde Google te permite descargar un widget que deshabilita Google Analytics en tu navegador.",
+            "If you’d like to prevent Google Analytics from tracking your visit, visit <a class=\"blue no-underline\" href=\"https://tools.google.com/dlpage/gaoptout?hl=es\" target=\"_blank\">this website</a>, where Google offers a downloadable widget that blocks Google Analytics on any website you visit.",
 
-            "Si tienes algún comentario acerca de este aviso, o te gustaría saber mas acerca de nuestra página, envíanos un mensaje a <a class=\"blue no-underline\" href=\"mailto:matvallejo@outlook.com\">matvallejo@outlook.com.</a>"
+            "If you have any questions or concerns about this policy, or would like to know a bit more about our website send us an email at <a class=\"blue no-underline\" href=\"mailto:matvallejo@outlook.com\">matvallejo@outlook.com.</a>"
           ]
         }
       ]
