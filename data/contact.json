@@ -1,24 +1,24 @@
 {
   "section": {
     "phone": {
-      "title": "Teléfono"
+      "title": "Store Number"
     },
     "email": {
       "title": "Email"
     },
     "address": {
-      "title": "Dirección"
+      "title": "Address"
     },
     "schedule": {
-      "opens": "Horarios <span class=\"silver\">(Abierto)</span>",
-      "lunch": "Horarios <span class=\"silver\">(En la Comida)</span>",
-      "closes": "Horarios <span class=\"silver\">(Cerrado)</span>"
+      "opens": "Store Hours <span class=\"silver\">(Open)</span>",
+      "lunch": "Store Hours <span class=\"silver\">(Away for Lunch)</span>",
+      "closes": "Store Hours <span class=\"silver\">(Closed)</span>"
     }
   },
   "number": "868 816 3393",
   "email": "matvallejo@outlook.com",
-  "github": "https://github.com/materialesvallejo/sitio",
-  "maps": "Abrir mapa en Google Maps",
+  "github": "https://github.com/claudiovallejo/materiales-vallejo",
+  "maps": "View map in Google Maps",
   "address": {
     "street": "Calle Dieciocho #156",
     "sector": "Colonia Buenavista",
@@ -29,32 +29,32 @@
   },
   "button": {
     "opens": {
-      "title": "Marcar a Oficina",
+      "title": "Call Store",
       "href": "tel:"
     },
     "closes": {
-      "title": "Enviar Correo",
+      "title": "Send Email",
       "href": "mailto:"
     }
   },
   "status": {
     "opens": {
-      "title": "Sucursal Abierta",
+      "title": "Store Open",
       "color": "bg-green"
     },
     "lunch": {
-      "title": "En la Comida",
+      "title": "Away at Lunch",
       "color": "bg-orange"
     },
     "closes": {
-      "title": "Sucursal Cerrada",
+      "title": "Store Closed",
       "color": "bg-red"
     }
   },
   "schedules": [
     {
       "is_full_day": true,
-      "title": "Entre semana",
+      "title": "Weekdays",
       "hours": {
         "opens": 8,
         "lunch": 13,
@@ -64,7 +64,7 @@
     },
     {
       "is_full_day": false,
-      "title": "Sábados",
+      "title": "Saturdays",
       "hours": {
         "opens": 8,
         "closes": 14
@@ -74,27 +74,27 @@
   "holidays": [
     {
       "is_half_day": false,
-      "title": "Revolución Mexicana",
+      "title": "Mexican Revolution",
       "date": "21/11/2016"
     },
     {
       "is_half_day": true,
-      "title": "Navidad",
+      "title": "Christmas",
       "date": "23/12/2016"
     },
     {
       "is_half_day": true,
-      "title": "Año Nuevo",
+      "title": "New Years",
       "date": "30/12/2016"
     },
     {
       "is_half_day": false,
-      "title": "Año Nuevo",
+      "title": "New Years",
       "date": "31/12/2016"
     },
     {
       "is_half_day": false,
-      "title": "Año Nuevo",
+      "title": "New Years",
       "date": "1/1/2017"
     }
   ]
