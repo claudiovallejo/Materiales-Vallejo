@@ -8,12 +8,12 @@
     "description": "Get your building materials at the construction site or store in less than 24 hours for free."
   },
   {
-    "name": "Planes de Pago",
+    "name": "Payment Plans",
     "icon": {
-      "path": "images/services/planes.svg",
-      "alt": "Icono de calendario palomeado para servicio de planes de pago."
+      "path": "images/services/plans.svg",
+      "alt": "Checked-box icon for payment plan service."
     },
-    "description": "Obtén planes de pago flexibles diseñados para complementar tus ventas e historial crediticio."
+    "description": "Enjoy flexible payment plans designed to fit your sales volume and credit history."
   },
   {
     "name": "Pagos con Crédito",
