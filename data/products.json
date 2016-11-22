@@ -417,77 +417,77 @@
       ]
     },
     {
-      "name": "Impermeabilizantes",
+      "name": "Impermeables",
       "products": [
         {
-          "name": "Weno 3 Años",
+          "name": "3 Year Weno",
           "brand": "Thermotek",
           "image": {
-            "path": "images/products/impermeabilizantes/weno-3-anos.jpg",
-            "alt": "Cubeta de Weno de 3 Años de 20lts marca Thermotek."
+            "path": "images/products/impermeables/3-year-weno.jpg",
+            "alt": "Thermotek brand 20lt 3 year weno bucket."
           },
           "info": [
             {
-              "title": "Volúmen disponible",
+              "title": "Available volume",
               "details": ["20lts"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Cubeta"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Weno 5 Años",
+          "name": "5 Year Weno",
           "brand": "Thermotek",
           "image": {
-            "path": "images/products/impermeabilizantes/weno-5-anos.jpg",
-            "alt": "Cubeta de Weno de 5 Años de 20lts marca Thermotek."
+            "path": "images/products/impermeables/5-year-weno.jpg",
+            "alt": "Thermotek brand 20lt 5 year weno bucket."
           },
           "info": [
             {
-              "title": "Volúmen disponible",
+              "title": "Available volume",
               "details": ["20lts"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Cubeta"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Cemento Acrílico",
+          "name": "Acrylic Cement",
           "brand": "Thermotek",
           "image": {
-            "path": "images/products/impermeabilizantes/cemento-acrilico.jpg",
-            "alt": "Cubeta de Cemento Acrílico de 10lts marca Thermotek."
+            "path": "images/products/impermeables/acrylic-cement.jpg",
+            "alt": "Thermotek 10lt acrylic cement bucket."
           },
           "info": [
             {
-              "title": "Volúmen disponible",
+              "title": "Available volume",
               "details": ["10lts"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Cubeta"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         },
         {
-          "name": "Sellador",
+          "name": "Sealer",
           "brand": "Thermotek",
           "image": {
-            "path": "images/products/impermeabilizantes/sellador.jpg",
-            "alt": "Cubeta de Sellador de 10lts marca Thermotek."
+            "path": "images/products/impermeables/sealer.jpg",
+            "alt": "Thermotek brand 10lt sealer bucket."
           },
           "info": [
             {
-              "title": "Vólumen disponible",
+              "title": "Availabel volume",
               "details": ["10lts"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Cubeta"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         }
