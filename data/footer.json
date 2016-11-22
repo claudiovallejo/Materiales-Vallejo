@@ -2,26 +2,26 @@
   "sections": [
     {
       "is_dynamic": false,
-      "title": "Empresa",
-      "url": "/empresa",
+      "title": "About Us",
+      "url": "/about",
       "target": false
     },
     {
       "is_dynamic": true,
-      "title": "Empleos",
-      "url": "/empleos",
+      "title": "Careers",
+      "url": "/careers",
       "target": false
     },
     {
       "is_dynamic": false,
-      "title": "Aviso",
-      "url": "/aviso",
+      "title": "Privacy Policy",
+      "url": "/privacy-policy",
       "target": false
     },
     {
       "is_dynamic": false,
-      "title": "Código Fuente",
-      "url": "https://github.com/materialesvallejo/sitio",
+      "title": "Source Code",
+      "url": "https://github.com/claudiovallejo/materiales-vallejo",
       "target": true
     }
   ]
