@@ -24,11 +24,11 @@
     "description": "Pay for your products with Coppel, Infonavit Credit, Visa or Mastercard."
   },
   {
-    "name": "Asesoría de Materiales",
+    "name": "Material Consulting",
     "icon": {
-      "path": "images/services/asesoria.svg",
-      "alt": "Icono de burbujas de chat para servicio de asesoría de materiales."
+      "path": "images/services/consulting.svg",
+      "alt": "Chat bubble icon for building material consulting service."
     },
-    "description": "Recibe atención personalizada y define el tipo y cantidad de materiales que necesita tu obra."
+    "description": "Enjoy free consulting from our team to help define the type and quantity of materials your project needs."
   }
 ]
