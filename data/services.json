@@ -1,11 +1,11 @@
 [
   {
-    "name": "Entregas Gratuitas",
+    "name": "Free Shipping",
     "icon": {
-      "path": "images/services/entregas.svg",
-      "alt": "Icono de carretilla para servicio de entregas gratuitas."
+      "path": "images/services/shipping.svg",
+      "alt": "Wheel barrow icon for free shipping service."
     },
-    "description": "Recibe tus materiales sin costo en tu domicilio o punto de venta en menos de 24 horas."
+    "description": "Get your building materials at the construction site or store in less than 24 hours for free."
   },
   {
     "name": "Planes de Pago",
