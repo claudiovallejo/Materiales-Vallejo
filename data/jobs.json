@@ -1,56 +1,56 @@
 {
   "page": {
-    "title": "Trabaja con Nosotros",
-    "subtitle": "Buscamos a gente capacitada con ganas de trabajar que se una a nuestro equipo en nuestra oficina de Matamoros."
+    "title": "Join our Team",
+    "subtitle": "We're looking for individuals from the Matamoros community to join our team."
   },
   "banner": {
-    "title": "Trabaja con Nosotros",
-    "subtitle": "Hay varios puestos disponibles y estamos buscando a gente local que se una a nuestro equipo.",
+    "title": "Join our Team",
+    "subtitle": "Work with us. We're looking for individuals from the Matamoros community to be a part of our team.",
     "buttons": {
-      "single": "Ver Detalles",
-      "multiple": "Ver Empleos"
+      "single": "View Details",
+      "multiple": "View Careers"
     }
   },
   "application": {
-    "title": "Favor de llenar la aplicación con los datos mas actualizados.",
-    "opens": "Si tienes alguna pregunta no dudes en marcarnos al <a class=\"blue no-underline\" href=\"tel:86883393\">(868) 816 3393</a>, estamos abiertos.",
-    "lunch": "Si tienes alguna pregunta, no dudes en enviarnos un mensaje a <a class=\"blue no-underline\" href=\"matvallejo@outlook.com\">matvallejo@outlook.com.</a>",
-    "closes": "Si tienes alguna pregunta, no dudes en enviarnos un mensaje a <a class=\"blue no-underline\" href=\"mailto:matvallejo@outlook.com\">matvallejo@outlook.com.</a>"
+    "tile": "Please fill out the following job application form as honestly as possible and with up to date information.",
+    "opens": "Our store is open. If you have any questions, give us a call at <a class=\"blue no-underline\" href=\"tel:86883393\">(868) 816 3393</a>.",
+    "lunch": "If you have any questions, send us an email at <a class=\"blue no-underline\" href=\"matvallejo@outlook.com\">matvallejo@outlook.com.</a>.",
+    "closes": "If you have any questions, send us an email at <a class=\"blue no-underline\" href=\"matvallejo@outlook.com\">matvallejo@outlook.com.</a>."
   },
   "list": [
     {
       "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Secretaria",
-      "subtitle": "Publicado el 17 de Nov. del 2016",
-      "link_title": "Ver Detalle",
-      "ad_subtitle": "Buscamos a una secretaria local con experiencia atendiendo clientes que se una a nuestro equipo.",
+      "subtitle": "Job available since Nov. 17 2016",
+      "link_title": "View Details",
+      "ad_subtitle": "We’re looking for individuals with point of sales experience and solving in-store client needs.",
       "sections": [
         {
-          "title": "Introducción",
-          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas y buscamos a una secretaria local que se una a nuestro equipo y esté dispuesta a escuchar y servir a nuestros clientes."
+          "title": "Introduction",
+          "content": "We’re a building material store from Matamoros, Tamaulipas and we’re looking for an individual from Matamoros to join our team and help welcome and attend in-store clients."
         },
         {
-          "title": "Detalles del Puesto",
-          "content": "Buscamos a una persona capaz de utilizar softwares de facturación y con capacidad e interés de aprender las bases de contabilidad. El trabajo require saber manejar correo electrónico, cotizaciones, cobrar y atender las llamadas de los clientes."
+          "title": "Job Details",
+          "content": "You are experienced with invoicing software and have the ability and interest to learn the basics of accounting. You also have knowledge of managing and working with email, estimating project pricing, charging, and attending client calls."
         }
       ]
     },
     {
       "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
-      "title": "Contadora",
-      "subtitle": "Publicado el 17 de Nov. del 2016",
-      "link_title": "Ver Detalle",
-      "ad_subtitle": "Buscamos a una contadora con experiencia en llevar un sistema computarizado de contabilidad que se una a nuestro equipo.",
+      "title": "Accountant",
+      "subtitle": "Job avaiable since Nov. 13 2016",
+      "link_title": "View Details",
+      "ad_subtitle": "We’re looking for an accountant with experience managing accounting softwares to join our team.",
       "sections": [
         {
-          "title": "Introducción",
-          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas que lo que mas nos importa es el cliente y buscamos una persona con experiencia en llevar un sistema computarizado de contabilidad relacionado con las ventas."
+          "title": "Introduction",
+          "content": "We’re a building material store in Matamoros, Tamaulipas looking for individuals with experience working with accounting and point of sales systems."
         },
         {
-          "title": "Detalles del Puesto",
-          "content": "Buscamos a una persona capaz de utilizar softwares de contabilidad y con capacidad e interés de aprender todas las áreas administrativas del negocio. El trabajo require saber manejar correo electrónico y un sistema de software contable."
+          "title": "Job Details",
+          "content": "You have experience working with accounting and email sofwares and have the ability and interest to learn about the different business departments."
         }
       ]
     },
@@ -58,35 +58,35 @@
       "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Chofer",
-      "subtitle": "Publicado el 17 de Nov. del 2016",
-      "link_title": "Ver Detalle",
-      "ad_subtitle": "Buscamos a un chofer con experiencia en el manejo de camión que se una a nuestro equipo.",
+      "subtitle": "Job available since Nov. 14 2016",
+      "link_title": "View Details",
+      "ad_subtitle": "We’re looking for a chofer with multi-state truck experience to join our team.",
       "sections": [
         {
-          "title": "Introducción",
-          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas que lo que mas nos importa es el cliente y buscamos una persona con experiencia en el manejo de camión y con capacidad física de cargar y descargar materiales para construcción dentro del área de Matamoros."
+          "title": "Introduction",
+          "content": "We’re a building material store in Matamoros, Tamaulipas looking for an individual with experience driving any type of truck or 18-wheeler and with the physical health and strength required to load and unload heavy construction materials such as steel rebars, cement bags, and construction sand."
         },
         {
-          "title": "Detalles del Puesto",
-          "content": "Buscamos a una persona con licencia de chofer, que sepa manejar cualquier tipo de camión y que se encargue del mantenimiento y cuidado del mismo."
+          "title": "Job Details",
+          "content": "You have a local chofer license, truck driving expertise and can maintain a clean vehicle at all times. You will be working with an assistant and have the ability and interest to lead and work alongside your fellow employees."
         }
       ]
     },
     {
       "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
-      "title": "Asistente de Chofer",
-      "subtitle": "Publicado el 17 de Nov. del 2016",
-      "link_title": "Ver Detalle",
-      "ad_subtitle": "Buscamos a un ayudante de chofer con capacidad de cargar y descargar materiales para construcción que se una nuestro equipo.",
+      "title": "Assistant Chofer",
+      "subtitle": "Job available since Nov. 21 2016",
+      "link_title": "View Details",
+      "ad_subtitle": "We’re looking for a strong, healthy chofer’s assistant to join our team.",
       "sections": [
         {
           "title": "Introducción",
-          "content": "Somos una tienda de materiales para construcción de Matamoros, Tamaulipas y buscamos una persona con capacidad física de cargar y descargar materiales para construcción."
+          "content": "We’re a building material store in Matamoros, Tamaulipas and we’re looking for an individual with good physical strength and health to load and unload heavy construction materials throughout the day."
         },
         {
-          "title": "Detalles del Puesto",
-          "content": "Buscamos a una persona dispuesta seguir órdenes de su jefe."
+          "title": "Job Details",
+          "content": "You're have great collaborative skills and are a great team worker. You are also strong and healthy enough to load and unload cement bags, steel rebars, and construction sand."
         }
       ]
     }
