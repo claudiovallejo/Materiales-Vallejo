@@ -1,59 +1,59 @@
 {
   "categories": [
     {
-      "name": "Cementos",
+      "name": "Cement",
       "products": [
         {
-          "name": "Cemento Gris",
+          "name": "Gray Cement",
           "brand": "Cemex",
           "image": {
-            "path": "images/products/cementos/cemento-gris.jpg",
-            "alt": "Bulto de Cemento Gris de Monterrey de 50kg marca Cemex."
+            "path": "images/products/cement/gray-cement.jpg",
+            "alt": "Cemex brand 50kg Gray Cement bag."
           },
           "info": [
             {
-              "title": "Pesos disponibles",
+              "title": "Available weights",
               "details": ["25kg", "50kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Bag"]
             }
           ]
         },
         {
-          "name": "Cemento Blanco",
+          "name": "White Cement",
           "brand": "Cemex",
           "image": {
-            "path": "images/products/cementos/cemento-blanco.jpg",
-            "alt": "Bulto de Cemento Blanco de Monterrey de 25kg marca Cemex."
+            "path": "images/products/cement/white-cement.jpg",
+            "alt": "Cemex brand 25kg White Cement bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weights",
               "details": ["25kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Bag"]
             }
           ]
         },
         {
-          "name": "Cemento Impercem",
+          "name": "Impermeable Cement",
           "brand": "Cemex",
           "image": {
-            "path": "images/products/cementos/cemento-impercem.jpg",
-            "alt": "Bulto de Cemento Impercem de Monterrey de 50kg marca Cemex."
+            "path": "images/products/cement/impermeable-cement.jpg",
+            "alt": "Cemex brand 50kg Impermeable Cement bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["50kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Bag"]
             }
           ]
         }
