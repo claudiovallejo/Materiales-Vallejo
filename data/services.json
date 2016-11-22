@@ -16,12 +16,12 @@
     "description": "Enjoy flexible payment plans designed to fit your sales volume and credit history."
   },
   {
-    "name": "Pagos con Crédito",
+    "name": "Credit Payments",
     "icon": {
-      "path": "images/services/pagos.svg",
-      "alt": "Icono de tarjetas de crédito para servicio de pagos con crédito."
+      "path": "images/services/payments.svg",
+      "alt": "Credit card icon for credit payment service."
     },
-    "description": "Compra tus materiales con tu tarjeta Coppel, Crédito Infonavit, Visa o Mastercard."
+    "description": "Pay for your products with Coppel, Infonavit Credit, Visa or Mastercard."
   },
   {
     "name": "Asesoría de Materiales",
