@@ -524,16 +524,16 @@
           "brand": "Grupo Calidra",
           "image": {
             "path": "images/products/cal/cal.jpg",
-            "alt": "Bulto de Cal de 40kg marca Grupo Calidra."
+            "alt": "Grupo Calidra 40kg cal bag."
           },
           "info": [
             {
-              "title": "Peso disponible",
+              "title": "Available weight",
               "details": ["40kg"]
             },
             {
-              "title": "Se vende por",
-              "details": ["Bulto"]
+              "title": "Sold by",
+              "details": ["Unit"]
             }
           ]
         }
