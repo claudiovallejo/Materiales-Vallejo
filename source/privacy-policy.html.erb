@@ -1,0 +1,49 @@
+---
+title: Privacy Policy — Materiales Vallejo
+layout: main
+dynamic: false
+---
+<%# Config %>
+<% policy = data.policy %>
+<%# End %>
+<main class="mw64_5 center ph1_5 ph2-m ph0-l ptc cf">
+  <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+  <div class="fl-ns w-80-m w-60-l">
+    <article class="mt4">
+      <header class="mb2">
+        <h1 class="ma0 mb1 lato dark-gray f15 fw4"><%= policy.title %></h1>
+        <p class="ma0 lato gray f1 fw4 lh1_5"><%= policy.introduction %></p>
+      </header>
+      <%# Config %>
+      <% sl = policy.sections.length - 1 %>
+      <%# End %>
+      <% policy.sections.each_with_index do |section, s| %>
+        <div class="<% if s === sl %>mb4<% end %>">
+          <h3 class="ma0 mb1 lato dark-gray f1 fw4"><%= section.title %></h3>
+          <%# Config %>
+          <% dl = section.details.length - 1 %>
+          <%# End %>
+          <% section.details.each_with_index do |detail, d| %>
+            <div class="<% if d === dl %>mb4<% end %>">
+              <% if detail.type === "text" %>
+                <% detail.list.each_with_index do |text, t| %>
+                  <p class="<% if d != dl %>mb1<% end %> lato gray f1 fw4 lh1_5"><%= text %></p>
+                <% end %>
+              <% else %>
+                <ul class="ma0 pa0 pl2 list">
+                  <%# Config %>
+                  <% bl = detail.list.length - 1 %>
+                  <%# End %>
+                  <% detail.list.each_with_index do |bullet, b| %>
+                    <li class="bullet-circle"><p class="dib ma0 <% if b != bl %>mb1<% end %> lato gray f1 fw4"><%= bullet %></p></li>
+                  <% end %>
+                </ul>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </article>
+  </div>
+  <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+</main>
