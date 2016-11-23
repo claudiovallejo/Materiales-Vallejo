@@ -5,16 +5,16 @@ dynamic: false
 ---
 <%# Config %>
 <% job = locals[:job] %>
-<% months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] %>
+<% months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Decemeber"] %>
 <% year_start = 1990 %>
 <% year_end = 2016 %>
-<% education = ["Primaria", "Secundaria", "Preparatoria", "Carrera", "Maestría", "Doctorado"] %>
+<% education = ["Elementary", "Middle School", "High School", "Bachelors"] %>
 <%# End %>
 <main class="mw64_5 center ph1_5 ph2-m ph0-l ptc cf">
   <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
   <div class="fl-ns w-80-m w-60-l">
     <article class="mv4">
-      <a class="db ma0 mb4 lato blue f1 fw4 no-underline" href="/empleos/<%= pretty_url job.title %>"><span class="dib mr0_5">←</span>Regresar a Detalle</a>
+      <a class="db ma0 mb4 lato blue f1 fw4 no-underline" href="/empleos/<%= pretty_url job.title %>"><span class="dib mr0_5">←</span>Back to Job Detail</a>
       <header class="mb4">
         <h1 class="ma0 mb0_5 lato dark-gray f15 fw4"><%= job.title %></h1>
         <h3 class="ma0 mb1_5 lato silver f1 fw4"><%= job.subtitle %></h3>
@@ -23,26 +23,26 @@ dynamic: false
       <%# ### %>
       <%# Simple Form %>
       <%# ### %>
-      <form action="https://getsimpleform.com/messages?form_api_token=<%= job.api_key %>" method="post">
+      <form action="" method="post">
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
         <input type='hidden' name='redirect_to' value='http://127.0.0.1:4567/aplicacion-enviada' />
         <%# ### %>
         <%# Personal Information %>
         <%# ### %>
         <div class="mb4 pb4 bb b--light-gray">
-          <h3 class="ma0 mb2 lato dark-gray f15 fw4">Datos Personales</h3>
+          <h3 class="ma0 mb2 lato dark-gray f15 fw4">Personal Details</h3>
           <div class="cf">
             <%# Full Name %>
             <div class="js-input fl-ns w-50-ns mb1 pr0_5-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="full_name">
-                Nombre Completo
+                Full Name
               </label>
               <input type="text" id="full_name" name="full_name" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
             </div>
             <%# Civil Status %>
             <div class="js-input fl-ns w-50-ns mb1 pl0_5-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="civil_status">
-                Estado Civil
+                Civil State
               </label>
               <input type="text" id="civil_status" name="civil_status" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
             </div>
@@ -51,14 +51,14 @@ dynamic: false
             <%# Age %>
             <div class="js-input fl-ns w-50-ns mb1 pr0_5-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="age">
-                Edad
+                Age
               </label>
               <input type="text" id="age" name="age" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
             </div>
             <%# Email %>
             <div class="js-input fl-ns w-50-ns mb1 pl0_5-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="email">
-                Correo Electrónico
+                Email
               </label>
               <input type="email" id="email" name="email" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
             </div>
@@ -67,7 +67,7 @@ dynamic: false
             <%# Address %>
             <div class="fl-ns w-100-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="address">
-                Domicilio
+                Address
               </label>
               <textarea id="address" name="address" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125" required></textarea>
             </div>
@@ -77,22 +77,22 @@ dynamic: false
         <%# Education %>
         <%# ### %>
         <div class="mb4 pb4 bb b--light-gray">
-          <h3 class="ma0 mb2 lato dark-gray f15 fw4">Último Estudio Realizado</h3>
+          <h3 class="ma0 mb2 lato dark-gray f15 fw4">Most Recent Education</h3>
           <div class="cf">
             <%# Name of Institution %>
             <div class="fl-ns w-50-ns mb1 pr0_5-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="name_of_institution">
-                Nombre de Institución
+                Name of Institution
               </label>
               <input type="text" id="name_of_institution" name="name_of_institution" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
             </div>
             <%# Degree %>
             <div class="fl-ns w-50-ns mb1 pl0_5-ns">
               <label class="db ma0 mb0_5 lato f075 gray" for="degree">
-                Estudio Realizado
+                Degree Received
               </label>
               <select id="degree" name="degree" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white" required>
-                  <option value="" selected disabled>Estudio Realizado</option>
+                  <option value="" selected disabled>Degree Received</option>
                 <% education.each do |type| %>
                   <option value="<%= type %>"><%= type %></option>
                 <% end %>
@@ -103,10 +103,10 @@ dynamic: false
             <%# Month of Graduation %>
             <div class="fl w-50 mb1 pr0_5">
               <label class="db ma0 mb0_5 lato f075 gray" for="graduation_month">
-                Mes de Graduación
+                Month of Graduation
               </label>
               <select id="graduation_month" name="graduation_month" class="db w-100 h2_5 pa0_5 ba lato f1 dark-gray b--light-gray br0125 bg-white">
-                  <option value="" selected disabled>Mes</option>
+                  <option value="" selected disabled>Month</option>
                 <% months.each do |month| %>
                   <option value="<%= month %>"><%= month %></option>
                 <% end %>
@@ -115,10 +115,10 @@ dynamic: false
             <%# Year of Graduation %>
             <div class="fl w-50 mb1 pl0_5">
               <label for="graduation_year" class="db ma0 mb0_5 lato f075 gray">
-                Año de Graduación
+                Year of Graduation
               </label>
               <select id="graduation_year" name="graduation_year" class="db w-100 h2_5 pa0_5 ba lato f1 dark-gray b--light-gray br0125 bg-white" required>
-                  <option value="" selected disabled>Año</option>
+                  <option value="" selected disabled>Year</option>
                 <% for year in year_start..year_end %>
                   <option value="<%= year %>"><%= year %></option>
                 <% end %>
@@ -129,17 +129,17 @@ dynamic: false
         <%# Employment History %>
         <div class="js-jobs">
           <%# Section Title %>
-          <h3 class="ma0 mb2 lato dark-gray f15 fw4">Historial de Empleo</h3>
+          <h3 class="ma0 mb2 lato dark-gray f15 fw4">Employment History</h3>
           <%# ### %>
           <%# Job #1 Details %>
           <%# ### %>
           <div class="mb4">
-            <h4 class="ma0 mb1 lato dark-gray f1 fw4">Detalles de Empleo #1</h4>
+            <h4 class="ma0 mb1 lato dark-gray f1 fw4">Job Detail #1</h4>
             <div class="cf">
               <%# Job Title %>
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="job_title_1">
-                  Nombre de Puesto
+                  Job Title
                 </label>
                 <input type="text" id="job_title_1" name="job_title_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
               </div>
@@ -148,10 +148,10 @@ dynamic: false
               <%# Date of Job Entry %>
               <div class="fl w-50 mb1 pr0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="start_month_1">
-                  Mes de Inicio
+                  Month of Entry
                 </label>
                 <select id="start_month_1" name="start_month_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white" required>
-                    <option value="" selected disabled>Mes</option>
+                    <option value="" selected disabled>Month</option>
                   <% months.each do |month| %>
                     <option value="<%= month %>"><%= month %></option>
                   <% end %>
@@ -160,10 +160,10 @@ dynamic: false
               <%# Date of Job Entry %>
               <div class="fl w-50 mb1 pl0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="start_year_1">
-                  Año de Inicio
+                  Year of Entry
                 </label>
                 <select id="start_year_1" name="start_year_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white" required>
-                    <option value="" selected disabled>Año</option>
+                    <option value="" selected disabled>Year</option>
                   <% for year in year_start..year_end %>
                     <option value="<%= year %>"><%= year %></option>
                   <% end %>
@@ -173,10 +173,10 @@ dynamic: false
             <div class="cf">
               <div class="fl w-50 mb1 pr0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="end_month_1">
-                  Mes de Término
+                  Month of Exit
                 </label>
                 <select id="end_month_1" name="end_month_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white" required>
-                    <option value="" selected disabled>Mes</option>
+                    <option value="" selected disabled>Month</option>
                   <% months.each do |month| %>
                     <option value="<%= month %>"><%= month %></option>
                   <% end %>
@@ -184,10 +184,10 @@ dynamic: false
               </div>
               <div class="fl w-50 mb1 pl0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="end_year_1">
-                  Año de Término
+                  Year of Exit
                 </label>
                 <select id="end_year_1" name="end_year_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white" required>
-                    <option value="" selected disabled>Año</option>
+                    <option value="" selected disabled>Year</option>
                   <% for year in year_start..year_end %>
                     <option value="<%= year %>"><%= year %></option>
                   <% end %>
@@ -198,7 +198,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="comments_1">
-                  Comentarios del Término
+                  Exit Details
                 </label>
                 <textarea id="comments_1" name="comments_1" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125" required></textarea>
               </div>
@@ -207,13 +207,13 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-50-ns mb1 pr0_5-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="company_name_1">
-                  Nombre de Empresa
+                  Name of Company
                 </label>
                 <input type="text" id="company_name_1" name="company_name_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
               </div>
               <div class="fl-ns w-50-ns mb1 pl0_5-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="boss_name_1">
-                  Nombre de Jefe Inmediato
+                  Manager's Full Name
                 </label>
                 <input type="text" id="boss_name_1" name="boss_name_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
               </div>
@@ -222,7 +222,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="phone_1">
-                  Teléfono de Empresa
+                  Company Phone Number
                 </label>
                 <input type="text" id="phone_1" name="phone_1" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" required>
               </div>
@@ -231,7 +231,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="address_1">
-                  Dirección de Empresa
+                  Company Address
                 </label>
                 <textarea id="address_1" name="address_1" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125 bg-white" required></textarea>
               </div>
@@ -241,12 +241,12 @@ dynamic: false
           <%# Job #2 Details %>
           <%# ### %>
           <div class="js-dynamic-require mb4">
-            <h4 class="ma0 mb1 lato dark-gray f1 fw4">Detalles de Empleo #2</h4>
+            <h4 class="ma0 mb1 lato dark-gray f1 fw4">Job Detail #2</h4>
             <div class="cf">
               <%# Job Title %>
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="job_title_2">
-                  Nombre de Puesto
+                  Job Title
                 </label>
                 <input type="text" id="job_title_2" name="job_title_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125">
               </div>
@@ -255,10 +255,10 @@ dynamic: false
               <%# Date of Job Entry %>
               <div class="fl w-50 mb1 pr0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="start_month_2">
-                  Mes de Inicio
+                  Month of Entry
                 </label>
                 <select id="start_month_2" name="start_month_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Mes</option>
+                    <option value="" selected disabled>Month</option>
                   <% months.each do |month| %>
                     <option value="<%= month %>"><%= month %></option>
                   <% end %>
@@ -267,10 +267,10 @@ dynamic: false
               <%# Date of Job Entry %>
               <div class="fl w-50 mb1 pl0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="start_year_2">
-                  Año de Inicio
+                  Year of Entry
                 </label>
                 <select id="start_year_2" name="start_year_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Año</option>
+                    <option value="" selected disabled>Year</option>
                   <% for year in year_start..year_end %>
                     <option valeu="<%= year %>"><%= year %></option>
                   <% end %>
@@ -280,10 +280,10 @@ dynamic: false
             <div class="cf">
               <div class="fl w-50 mb1 pr0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="end_month_2">
-                  Mes de Término
+                  Month of Exit
                 </label>
                 <select id="end_month_2" name="end_month_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Mes</option>
+                    <option value="" selected disabled>Month</option>
                   <% months.each do |month| %>
                     <option value="<%= month %>"><%= month %></option>
                   <% end %>
@@ -291,10 +291,10 @@ dynamic: false
               </div>
               <div class="fl w-50 mb1 pl0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="end_year_2">
-                  Año de Término
+                  Year of Exit
                 </label>
                 <select id="end_year_2" name="end_year_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Año</option>
+                    <option value="" selected disabled>Year</option>
                   <% for year in year_start..year_end %>
                     <option value="<%= year %>"><%= year %></option>
                   <% end %>
@@ -305,7 +305,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="comments_2">
-                  Comentarios del Término
+                  Exit Details
                 </label>
                 <textarea id="comments_2" name="comments_2" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125"></textarea>
               </div>
@@ -314,13 +314,13 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-50-ns mb1 pr0_5-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="company_name_2">
-                  Nombre de Empresa
+                  Company Name
                 </label>
                 <input type="text" id="company_name_2" name="company_name_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125">
               </div>
               <div class="fl-ns w-50-ns mb1 pl0_5-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="boss_name_2">
-                  Nombre de Jefe Inmediato
+                  Manager's Full Name
                 </label>
                 <input type="email" id="boss_name_2" name="boss_name_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" >
               </div>
@@ -329,7 +329,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="phone_2">
-                  Teléfono de Empresa
+                  Company Phone Numnber
                 </label>
                 <input type="text" id="phone_2" name="phone_2" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" >
               </div>
@@ -338,7 +338,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="address_2">
-                  Dirección de Empresa
+                  Company Address
                 </label>
                 <textarea id="address_2" name="address_2" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125 bg-white" ></textarea>
               </div>
@@ -348,12 +348,12 @@ dynamic: false
           <%# Job #3 Details %>
           <%# ### %>
           <div class="js-dynamic-require">
-            <h4 class="ma0 mb1 lato dark-gray f1 fw4">Detalles de Empleo #3</h4>
+            <h4 class="ma0 mb1 lato dark-gray f1 fw4">Job Detail #3</h4>
             <div class="cf">
               <%# Job Title %>
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="job_title_3">
-                  Nombre de Puesto
+                  Job Title
                 </label>
                 <input type="text" id="job_title_3" name="job_title_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" >
               </div>
@@ -362,10 +362,10 @@ dynamic: false
               <%# Date of Job Entry %>
               <div class="fl w-50 mb1 pr0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="start_month_3">
-                  Mes de Inicio
+                  Month of Entry
                 </label>
                 <select id="start_month_3" name="start_month_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Mes</option>
+                    <option value="" selected disabled>Month</option>
                   <% months.each do |month| %>
                     <option value="<%= month %>"><%= month %></option>
                   <% end %>
@@ -374,10 +374,10 @@ dynamic: false
               <%# Date of Job Entry %>
               <div class="fl w-50 mb1 pl0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="start_year_3">
-                  Año de Inicio
+                  Year of Entry
                 </label>
                 <select id="start_year_3" name="start_year_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Año</option>
+                    <option value="" selected disabled>Year</option>
                   <% for year in year_start..year_end %>
                     <option value="<%= year %>"><%= year %></option>
                   <% end %>
@@ -387,10 +387,10 @@ dynamic: false
             <div class="cf">
               <div class="fl w-50 mb1 pr0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="end_month_3">
-                  Mes de Término
+                  Month of Exit
                 </label>
                 <select id="end_month_3" name="end_month_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Mes</option>
+                    <option value="" selected disabled>Month</option>
                   <% months.each do |month| %>
                     <option value="<%= month %>"><%= month %></option>
                   <% end %>
@@ -398,10 +398,10 @@ dynamic: false
               </div>
               <div class="fl w-50 mb1 pl0_5">
                 <label class="db ma0 mb0_5 lato f075 gray" for="end_year_3">
-                  Año de Término
+                  Year of Exit
                 </label>
                 <select id="end_year_3" name="end_year_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125 bg-white">
-                    <option value="" selected disabled>Año</option>
+                    <option value="" selected disabled>Year</option>
                   <% for year in year_start..year_end %>
                     <option value="<%= year %>"><%= year %></option>
                   <% end %>
@@ -412,7 +412,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="comments_3">
-                  Comentarios del Término
+                  Exit Details
                 </label>
                 <textarea id="comments_3" name="comments_3" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125" ></textarea>
               </div>
@@ -421,13 +421,13 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-50-ns mb1 pr0_5-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="company_name_3">
-                  Nombre de Empresa
+                  Company Name
                 </label>
                 <input type="text" id="company_name_3" name="company_name_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" >
               </div>
               <div class="fl-ns w-50-ns mb1 pl0_5-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="boss_name_3">
-                  Nombre de Jefe Inmediato
+                  Manager's Full Name
                 </label>
                 <input type="email" id="boss_name_3" name="boss_name_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" >
               </div>
@@ -436,7 +436,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns mb1">
                 <label class="db ma0 mb0_5 lato f075 gray" for="phone_3">
-                  Teléfono de Empresa
+                  Company Phone Number
                 </label>
                 <input type="text" id="phone_3" name="phone_3" class="db w-100 h2_5 pa0_5 ba lato dark-gray b--light-gray br0125" >
               </div>
@@ -445,7 +445,7 @@ dynamic: false
             <div class="cf">
               <div class="fl-ns w-100-ns">
                 <label class="db ma0 mb0_5 lato f075 gray" for="address_3">
-                  Dirección de Empresa
+                  Company Address
                 </label>
                 <textarea id="address_3" name="address_3" class="db w-100 h10 pa0_5 ba lato lh1_5 dark-gray b--light-gray br0125 bg-white" ></textarea>
               </div>
@@ -456,7 +456,7 @@ dynamic: false
         <%# Button %>
         <%# ### %>
         <div>
-          <button type="submit" class="dib w8 pv1 ph1_5 mt4 lato white fw7 no-underline tc bg-blue bn br0125">Enviar</button>
+          <button type="submit" class="dib w8 pv1 ph1_5 mt4 lato white fw7 no-underline tc bg-blue bn br0125">Send</button>
         </div>
       </form>
     </article>
