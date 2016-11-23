@@ -148,10 +148,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Closed");
     }
-    if (currentPath === '/empresa') {
+    if (currentPath === '/about') {
       aboutContent("Closed");
     }
-    if (currentPath.includes('aplicacion')) {
+    if (currentPath.includes('application')) {
       applicationContent("Closed");
     }
   }
@@ -163,10 +163,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Lunch");
     }
-    if (currentPath === '/empresa') {
+    if (currentPath === '/about') {
       aboutContent("Lunch");
     }
-    if (currentPath.includes('aplicacion')) {
+    if (currentPath.includes('application')) {
       applicationContent("Lunch");
     }
   }
@@ -223,11 +223,11 @@ function aboutContent(status) {
   const $remove = document.getElementsByClassName('js-remove')[0];
   //  Set innerHTML to "Closed" / "Lunch" status
   if (status === "Closed") {
-    $about.innerHTML = '<%= data.about.contact.closes %>';
+    $about.innerHTML = "<%= data.about.contact.closes %>";
     $contact.removeChild($remove);
   }
   else if (status === "Lunch") {
-    $about.innerHTML = '<%= data.about.contact.lunch %>';
+    $about.innerHTML = "<%= data.about.contact.lunch %>";
     $contact.removeChild($remove);
   }
 }
@@ -251,7 +251,7 @@ function contactSection(status) {
   const $schedule = document.getElementsByClassName('js-schedule')[0];
   //  Set subtitle, phone, and schedule to "Closed"
   if (status === "Closed") {
-    $subtitle.innerHTML = '<%= data.index.contact.subtitle.closes %>';
+    $subtitle.innerHTML = "<%= data.index.contact.subtitle.closes %>";
     $phone.classList.remove('blue');
     $phone.classList.remove('hover-dark-blue');
     $phone.classList.add('gray');
@@ -260,7 +260,7 @@ function contactSection(status) {
   }
   //  Set subtitle, phone, and schedule to "Lunch"
   if (status === "Lunch") {
-    $subtitle.innerHTML = '<%= data.index.contact.subtitle.lunch %>';
+    $subtitle.innerHTML = "<%= data.index.contact.subtitle.lunch %>";
     $phone.classList.remove('blue');
     $phone.classList.remove('hover-dark-blue');
     $phone.classList.add('gray');
@@ -269,4 +269,4 @@ function contactSection(status) {
   }
 }
 //  Updating dynamic content
-updateDynamicContent(setCurrentDayTime(), setCurrentDayType());
+updateDynamicContent("Open", setCurrentDayType());
