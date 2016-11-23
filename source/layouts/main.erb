@@ -7,6 +7,7 @@
     <%= partial "partials/meta" %>
     <title><%= current_page.data.title %></title>
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag :tachyons %>
     <%= stylesheet_link_tag :site %>
     <%= stylesheet_link_tag :animate %>
   </head>
@@ -17,7 +18,7 @@
     <%= partial "partials/footer" %>
     <%= javascript_include_tag :site %>
     <% fish = current_page.data.dynamic %>
-    <% if current_page.data.title == "Materiales para Construcción — Materiales Vallejo" %>
+    <% if current_page.data.title == "Building Material Store — Materiales Vallejo" %>
       <%= javascript_include_tag :dynamic %>
     <% end %>
   </body>
