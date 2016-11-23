@@ -19,9 +19,9 @@
   },
   "list": [
     {
-      "is_published": false,
+      "is_published": true,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
-      "title": "Secretaria",
+      "title": "Secretary",
       "subtitle": "Job available since Nov. 17 2016",
       "link_title": "View Details",
       "ad_subtitle": "We’re looking for individuals with point of sales experience and solving in-store client needs.",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "is_published": false,
+      "is_published": true,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Accountant",
       "subtitle": "Job avaiable since Nov. 13 2016",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "is_published": false,
+      "is_published": true,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Chofer",
       "subtitle": "Job available since Nov. 14 2016",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "is_published": false,
+      "is_published": true,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Assistant Chofer",
       "subtitle": "Job available since Nov. 21 2016",
