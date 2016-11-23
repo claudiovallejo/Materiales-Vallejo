@@ -1,5 +1,5 @@
 ---
-title: Materiales para Construcción — Materiales Vallejo
+title: Building Material Store — Materiales Vallejo
 layout: main
 dynamic: true
 ---
@@ -51,7 +51,7 @@ dynamic: true
       <p class="ma0 f1 fw4 lh1_5 gray"><%= data.index.products.subtitle %></p>
     </header>
     <nav>
-      <ul class="mw64_5 center ma0 ph1_5 ph2-m pb3 overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+      <ul class="mw64_5 center ma0 ph1_5 ph2-m pb3 tc overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
         <% categories.each_with_index do |category, c| %>
           <li class="dib"><a class="js-category dib ma0 lato <% if c === 0 %>blue<% else %>gray<% end %> <% if c != cl %>mr2<% end %> hover-blue link no-underline cursor-pointer"><%= category.name %></a></li>
         <% end %>
