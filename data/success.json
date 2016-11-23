@@ -1,12 +1,12 @@
 {
-  "title": "Aplicación Recibida",
-  "subtitle": "Muchas gracias por aplicar! Estaremos en contacto contigo en los próximos días. Que tengas buen día!",
+  "title": "Job Application Received",
+  "subtitle": "Thanks for applying! We’ll be in touch within the next couple of days. Have a great day!",
   "image": {
-    "path": "images/icons/enviado.svg",
-    "alt": "Mensaje ha sido enviado exitosamente."
+    "path": "images/icons/received.svg",
+    "alt": "Checkmark icon for successful application delivery."
   },
   "action": {
-    "title": "Ir a Inicio",
+    "title": "Homepage",
     "path": "/"
   }
 }
