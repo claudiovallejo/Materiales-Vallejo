@@ -148,10 +148,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Closed");
     }
-    if (currentPath === '/about') {
+    if (currentPath === '/empresa') {
       aboutContent("Closed");
     }
-    if (currentPath.includes('application')) {
+    if (currentPath.includes('aplicacion')) {
       applicationContent("Closed");
     }
   }
@@ -163,10 +163,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Lunch");
     }
-    if (currentPath === '/about') {
+    if (currentPath.includes('empresa')) {
       aboutContent("Lunch");
     }
-    if (currentPath.includes('application')) {
+    if (currentPath.includes('aplicacion')) {
       applicationContent("Lunch");
     }
   }
@@ -269,4 +269,5 @@ function contactSection(status) {
   }
 }
 //  Updating dynamic content
-updateDynamicContent("Open", setCurrentDayType());
+updateDynamicContent("Open", "Full Day");
+// updateDynamicContent(setCurrentDayTime(), setCurrentDayType());
