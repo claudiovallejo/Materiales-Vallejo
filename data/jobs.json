@@ -24,7 +24,7 @@
       "title": "Secretary",
       "subtitle": "Job available since Nov. 17 2016",
       "link_title": "View Details",
-      "ad_subtitle": "We’re looking for individuals with point of sales experience and solving in-store client needs.",
+      "ad_subtitle": "We’re looking for individuals with point of sales experience and great communication skills to serve clients.",
       "sections": [
         {
           "title": "Introduction",
@@ -37,12 +37,12 @@
       ]
     },
     {
-      "is_published": true,
+      "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Accountant",
       "subtitle": "Job avaiable since Nov. 13 2016",
       "link_title": "View Details",
-      "ad_subtitle": "We’re looking for an accountant with experience managing accounting softwares to join our team.",
+      "ad_subtitle": "We’re looking for individuals with experience working with accounting softwares and email management.",
       "sections": [
         {
           "title": "Introduction",
@@ -55,12 +55,12 @@
       ]
     },
     {
-      "is_published": true,
+      "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Chofer",
       "subtitle": "Job available since Nov. 14 2016",
       "link_title": "View Details",
-      "ad_subtitle": "We’re looking for a chofer with multi-state truck experience to join our team.",
+      "ad_subtitle": "We’re looking for individuals with truck-driving experience and leading skills.",
       "sections": [
         {
           "title": "Introduction",
@@ -73,12 +73,12 @@
       ]
     },
     {
-      "is_published": true,
+      "is_published": false,
       "api_key": "95a5898a50a025a64ceff5eb92a45eab",
       "title": "Assistant Chofer",
       "subtitle": "Job available since Nov. 21 2016",
       "link_title": "View Details",
-      "ad_subtitle": "We’re looking for a strong, healthy chofer’s assistant to join our team.",
+      "ad_subtitle": "We’re looking for individuals to assist with loading and unloading heavy construction materials.",
       "sections": [
         {
           "title": "Introducción",
