@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     del = require('del'),
     gzip = require('gulp-gzip'),
     imagemin = require('gulp-imagemin'),
-    sitemap = require('gulp-sitemap');
+    sitemap = require('gulp-sitemap'),
+    clean = require('gulp-clean');
 
 //  Minify .html
 gulp.task('markup', function(){
@@ -28,7 +29,14 @@ gulp.task('styles', function(){
 
 //  Minify javascripts
 gulp.task('scripts', function(){
-  gulp.src(['build/javascripts/all.js', 'build/javascripts/dynamic.js'])
+  gulp.src(['build/javascripts/scroll.js', 'build/javascripts/dynamic.js'])
+  .pipe(concat('dynamic.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('build/javascripts'))
+  .pipe(gzip())
+  .pipe(gulp.dest('build/javascripts'))
+
+  gulp.src('build/javascripts/site.js')
   .pipe(uglify())
   .pipe(gulp.dest('build/javascripts'))
   .pipe(gzip())
@@ -53,5 +61,11 @@ gulp.task('sitemap', function() {
   .pipe(gulp.dest('./build'));
 });
 
+//  Delete unused files
+gulp.task('clean', function () {
+  return gulp.src('build/javascripts/scroll.js', {read: false})
+    .pipe(clean());
+});
+
 // Run previously declared tasks on `gulp`
-gulp.task('build', ['markup', 'styles', 'scripts', 'images', 'sitemap']);
+gulp.task('build', ['markup', 'styles', 'scripts', 'images', 'sitemap', 'clean']);
