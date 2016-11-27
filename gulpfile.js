@@ -55,7 +55,7 @@ gulp.task('sitemap', function() {
     read: false
   })
   .pipe(sitemap({
-    siteUrl: 'https://materialesvallejo.com'
+    siteUrl: 'http://materialesvallejo.netlify.com'
   }))
   .pipe(gulp.dest('./build'));
 });
