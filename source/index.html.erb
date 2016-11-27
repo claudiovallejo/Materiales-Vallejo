@@ -24,11 +24,11 @@ dynamic: true
             <% anchor_two = button.link %>
           <% end %>
           <% if button.is_primary %>
-            <a id="test" class="db dib-ns center w8 pv1 ph1_5  <% if b == 0 %>mb1<% end %> mb0-ns mr1-ns lato white fw7 no-underline tc bg-blue hover-bg-dark-blue br0125 button" href="#<%= anchor_one %>">
+            <a id="test" class="scroll db dib-ns center w8 pv1 ph1_5  <% if b == 0 %>mb1<% end %> mb0-ns mr1-ns lato white fw7 no-underline tc bg-blue hover-bg-dark-blue br0125 button" href="#<%= anchor_one %>">
               <%= button.title %>
             </a>
           <% else %>
-            <a id="secondary" class="db dib-ns center w8 pv1 ph1_5 <% if b == 0 %>mb1<% end %> lato white fw7 no-underline tc ba b--white br0125" href="#<%= anchor_two %>"><%= button.title %></a>
+            <a id="secondary" class="scroll db dib-ns center w8 pv1 ph1_5 <% if b == 0 %>mb1<% end %> lato white fw7 no-underline tc ba b--white br0125" href="#<%= anchor_two %>"><%= button.title %></a>
           <% end %>
         <% end %>
       </div>
