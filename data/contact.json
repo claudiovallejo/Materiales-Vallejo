@@ -11,7 +11,7 @@
     },
     "schedule": {
       "opens": "Store Hours <span class=\"silver\">(Open)</span>",
-      "lunch": "Store Hours <span class=\"silver\">(Away for Lunch)</span>",
+      "lunch": "Store Hours <span class=\"silver\">(Out for Lunch)</span>",
       "closes": "Store Hours <span class=\"silver\">(Closed)</span>"
     }
   },
@@ -43,7 +43,7 @@
       "color": "bg-green"
     },
     "lunch": {
-      "title": "Away at Lunch",
+      "title": "Out for Lunch",
       "color": "bg-orange"
     },
     "closes": {
