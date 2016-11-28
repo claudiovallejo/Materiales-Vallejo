@@ -148,10 +148,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Closed");
     }
-    if (currentPath === '/empresa') {
+    if (currentPath.include('/about')) {
       aboutContent("Closed");
     }
-    if (currentPath.includes('aplicacion')) {
+    if (currentPath.includes('application')) {
       applicationContent("Closed");
     }
   }
@@ -163,10 +163,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Lunch");
     }
-    if (currentPath.includes('empresa')) {
+    if (currentPath.include('/about')) {
       aboutContent("Lunch");
     }
-    if (currentPath.includes('aplicacion')) {
+    if (currentPath.includes('application')) {
       applicationContent("Lunch");
     }
   }
