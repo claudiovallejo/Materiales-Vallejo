@@ -1099,6 +1099,29 @@ img { max-width: 100%; }
 */
 /*
 
+  ANIMATIONS
+
+*/
+/* Rotate */
+.js-rotate { -webkit-transition: transform 0.30s cubic-bezier(0.45, 0.25, 0.25, 1); transition: transform 0.30s cubic-bezier(0.45, 0.25, 0.25, 1); }
+.is-down { transform: rotate(0deg); }
+.is-up { transform: rotate(180deg); }
+/* Fade */
+.js-fade { -webkit-transition: opacity 0.25s ease-in-out; transition: opacity 0.25s ease-in-out; }
+.js-load { -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }
+.js-scale { -webkit-transition: transform 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) 0.75s; transition: transform 0.30s cubic-bezier(0.45, 0.25, 0.25, 1) 0.75s; }
+.is-tiny { transform: scale(0); }
+.is-normal { transform: scale(1); }
+.is-visible { opacity: 1; }
+.is-hidden { opacity: 0; }
+.is-offset { transform: translateY(1rem); }
+.is-set { transform: translateY(0); }
+/* Change */
+.js-change { -webkit-transition: fill 0.25s ease-in-out; transition: fill 0.25 ease-in-out; }
+.is-active { fill: #0080ff; }
+.is-idle { fill: #bdbdbd; }
+/*
+
   CUSTOM MEDIA QUERIES
 
   Media query values can be changed to fit your own content.
@@ -1129,28 +1152,6 @@ img { max-width: 100%; }
 
 */
 /* Media Queries */
-/* Debugging */
-/*
-
-  DEBUG CHILDREN
-  Docs: http://tachyons.io/docs/debug/
-
-  Just add the debug class to any element to see outlines on its
-  children.
-
-*/
-/*
-
-   DEBUG GRID
-   http://tachyons.io/docs/debug-grid/
-
-   Can be useful for debugging layout issues
-   or helping to make sure things line up perfectly.
-   Just tack one of these classes onto a parent element.
-
-*/
-/* Uncomment out the line below to help debug layout issues */
-/* @import './_debug'; */
 @media screen and (min-width: 30em) {
   /* Display */
   .dn-ns { display: none; }
