@@ -148,10 +148,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Closed");
     }
-    if (currentPath.include('/about')) {
+    if (currentPath.includes('/about')) {
       aboutContent("Closed");
     }
-    if (currentPath.include('application')) {
+    if (currentPath.includes('application')) {
       applicationContent("Closed");
     }
   }
@@ -163,10 +163,10 @@ function updateDynamicContent(officeStatus, dayType) {
     if (currentPath === '/') {
       contactSection("Lunch");
     }
-    if (currentPath.include('/about')) {
+    if (currentPath.includes('/about')) {
       aboutContent("Lunch");
     }
-    if (currentPath.include('application')) {
+    if (currentPath.includes('application')) {
       applicationContent("Lunch");
     }
   }
@@ -212,7 +212,7 @@ function mobileAction(status) {
     $button.classList.toggle('bg-green');
     $button.classList.toggle('bg-blue');
     $button.setAttribute('href', 'mailto:<%= data.contact.email %>');
-    $button.style.backgroundImage = "url('../../images/icons/mensaje.svg')";
+    $button.style.backgroundImage = "url('/images/icons/mensaje.svg')";
   }
 }
 //  Updates About content
