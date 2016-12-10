@@ -75,7 +75,7 @@ dynamic: true
           <% categories.each do |category| %>
             <% category.products.each do |product| %>
               <% pc = pc + 1 %>
-              <article class="js-card dib w15 h20 <% if pc != pl %>mr2<% end %> bg-white ba b--light-gray br0125 cursor-pointer" data-category="<%= category.name.downcase %>">
+              <article class="js-card dib w15 h20 <% if pc != pl %>mr2<% end %> bg-white ba b--light-gray br0125 cursor-pointer" data-category="<%= category.name.downcase %>" style="-webkit-tap-highlight-color: rgba(255, 255, 255, 0);">
                 <header class="relative mh1_5 mt1_5 pb2">
                   <%= image_tag "icons/flecha.svg", :class => "js-rotate is-down absolute top-1 right-0" %>
                   <h2 class="ma0 mb0_5 lato f1 fw4 silver"><%= product.brand %></h2>
