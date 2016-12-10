@@ -249,6 +249,7 @@ function contactSection(status) {
   const $subtitle = document.getElementsByClassName('js-subtitle')[0];
   const $phone = document.getElementsByClassName('js-phone')[0];
   const $schedule = document.getElementsByClassName('js-schedule')[0];
+  const $email = document.getElementsByClassName('js-email')[0];
   //  Set subtitle, phone, and schedule to "Closed"
   if (status === "Closed") {
     $subtitle.innerHTML = "<%= data.index.contact.subtitle.closes %>";
@@ -256,6 +257,10 @@ function contactSection(status) {
     $phone.classList.remove('hover-dark-blue');
     $phone.classList.add('gray');
     $phone.removeAttribute('href');
+    $email.classList.remove('gray');
+    $email.classList.add('blue');
+    $email.classList.add('hover-dark0blue');
+    $email.setAttribute('href', 'mailto:<%= data.contact.email %>');
     $schedule.innerHTML = '<%= data.contact.section.schedule.closes %>';
   }
   //  Set subtitle, phone, and schedule to "Lunch"
@@ -265,8 +270,13 @@ function contactSection(status) {
     $phone.classList.remove('hover-dark-blue');
     $phone.classList.add('gray');
     $phone.removeAttribute('href');
+    $email.classList.remove('gray');
+    $email.classList.add('blue');
+    $email.classList.add('hover-dark0blue');
+    $email.setAttribute('href', 'mailto:<%= data.contact.email %>');
     $schedule.innerHTML = '<%= data.contact.section.schedule.lunch %>';
   }
 }
 //  Updating dynamic content
-updateDynamicContent(setCurrentDayTime(), setCurrentDayType());
+updateDynamicContent("Closed", "Full Day");
+// updateDynamicContent(setCurrentDayTime(), setCurrentDayType());
